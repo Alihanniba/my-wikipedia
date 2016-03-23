@@ -39,13 +39,13 @@
             "defineWord" : ["Gitbook Use"]
         },
         "github": {
-            "url": "https://github.com/zhangjikai/"
+            "url": "https://github.com/alihanniba/"
         },
 
         "sharing": {
             "weibo": true,
-            "facebook": true,
-            "twitter": true,
+            "facebook": false,
+            "twitter": false,
             "google": false,
             "instapaper": false,
             "vk": false,
