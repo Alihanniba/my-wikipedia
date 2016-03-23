@@ -31,7 +31,7 @@
     ],
     "pluginsConfig": {
         "disqus": {
-            "shortName": "My-WikiPedia"
+            "shortName": "gitbookuse"
         },
         "search-pro": {
             "cutWordLib": "nodejieba",
