@@ -34,8 +34,8 @@
             "shortName": "My-WikiPedia"
         },
         "search-pro": {
-            "cutWordLib": "My-WikiPedia",
-            "defineWord" : ["My-WikiPedia"]
+            "cutWordLib": "nodejieba",
+            "defineWord" : ["Gitbook Use"]
         },
         "github": {
             "url": "https://github.com/alihanniba/"
