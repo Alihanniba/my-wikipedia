@@ -1,7 +1,7 @@
 # Introduction
 ##Common Declarations
 
-##HTML5
+###HTML5
 
 
 > <!DOCTYPE html>
