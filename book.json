@@ -2,8 +2,7 @@
     "title" : "My-WikiPedia",
     "description" : "My-WikiPedia",
     "author" : "alihanniba",
-    "generator": "site",
-    "language" : "zh-hans",
+    "language" : "en",
     "links" : {
         "sidebar" : {
             "alihanniba" : "https://www.alihanniba.com"
