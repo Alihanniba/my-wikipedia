@@ -44,6 +44,7 @@
 
         "sharing": {
             "weibo": true,
+            "weixin":true
             "facebook": false,
             "twitter": false,
             "google": true,
@@ -51,7 +52,7 @@
             "vk": false,
             "all": [
                 "facebook", "google", "twitter",
-                "weibo", "instapaper"
+                "weibo", "instapaper",weixin,
             ]
         },
 
