@@ -7,7 +7,7 @@
     "direction": "this is my first book on gitbook",
     "links" : {
         "sidebar" : {
-            "Home" : "https://www.alihanniba.com/"
+            "alihanniba" : "https://www.alihanniba.com/"
         }
     },
     "plugins": [
