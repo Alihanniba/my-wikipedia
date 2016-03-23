@@ -8,7 +8,7 @@
    * CSS
        * [1](c.1.md)
        * [2](c.2.md)
-   * Javascript
+   * [Javascript](javascript.md)
    * [jQuery](jquery.md)
 * [Server](hou_duan.md)
    * [PHP](1.php.md)
