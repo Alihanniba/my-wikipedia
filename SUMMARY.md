@@ -7,5 +7,5 @@
    * Javascript
    * jQuery
 * [Server](hou_duan.md)
-   * [1.php](1.php.md)
+   * [PHP](1.php.md)
 
