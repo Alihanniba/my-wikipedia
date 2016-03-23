@@ -9,8 +9,9 @@
 
 {
     "title": "My-WikiPedia",
-    "description": "this is my first book on gitbook",
+    "author" : "alihanniba",
+    "description": "alihanniba",
     "isbn": "978-3-16-148410-0",
     "language": "zh-tw",
-    "direction": "ltr"
+    "direction": "this is my first book on gitbook"
 }
