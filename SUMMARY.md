@@ -5,6 +5,7 @@
    * [HTML](1.javascript.md)
    * CSS
    * Javascript
+   * jQuery
 * [Server](hou_duan.md)
    * [1.php](1.php.md)
 
