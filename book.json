@@ -12,6 +12,11 @@
     "author" : "alihanniba",
     "description": "alihanniba",
     "isbn": "978-3-16-148410-0",
-    "language": "zh-tw",
-    "direction": "this is my first book on gitbook"
+    "language": "en",
+    "direction": "this is my first book on gitbook",
+    "links" : {
+        "sidebar" : {
+            "Home" : "https://www.alihanniba.com/"
+        }
+    }
 }
