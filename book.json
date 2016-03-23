@@ -44,7 +44,7 @@
 
         "sharing": {
             "weibo": true,
-            "weixin":true
+            "weixin":true,
             "facebook": false,
             "twitter": false,
             "google": true,
