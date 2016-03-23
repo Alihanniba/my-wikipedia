@@ -9,7 +9,7 @@
        * [1](c.1.md)
        * [2](c.2.md)
    * Javascript
-   * jQuery
+   * [jQuery](jquery.md)
 * [Server](hou_duan.md)
    * [PHP](1.php.md)
    * [NodeJs](nodejs.md)
