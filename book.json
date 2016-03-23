@@ -56,7 +56,7 @@
 
         "tbfed-pagefooter": {
             "copyright":"Copyright &copy alihanniba.com 2016",
-            "modify_label": "The document revision time：",
+            "modify_label": "",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
 
