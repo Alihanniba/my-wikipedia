@@ -3,8 +3,6 @@
 * [Introduction](README.md)
 * [Client](qian_duan.md)
    * [HTML](1.javascript.md)
-       * [first](1.md)
-           * 1
        * [2](2.md)
    * CSS
        * [1](c.1.md)
