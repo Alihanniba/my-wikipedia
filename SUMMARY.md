@@ -5,7 +5,7 @@
    * [HTML](1.javascript.md)
        * [HOME](home.md)
        * [Introduction](introduction.md)
-       * Basic
+       * [Basic](basic.md)
    * CSS
        * [1](c.1.md)
        * [2](c.2.md)
