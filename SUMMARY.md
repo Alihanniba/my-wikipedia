@@ -6,7 +6,7 @@
        * [HOME](home.md)
        * [Introduction](introduction.md)
        * [Basic](basic.md)
-       * Attributes
+       * [Attributes](attributes.md)
    * CSS
        * [1](c.1.md)
        * [2](c.2.md)
