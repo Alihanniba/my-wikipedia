@@ -23,3 +23,10 @@ So ,现在把这些遇到的问题总结下来,以防以后踩坑.
 
 <p data-height="75" data-theme-id="0" data-slug-hash="pydqEo" data-default-tab="result" data-user="alihanniba" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/alihanniba/pen/pydqEo/">pydqEo</a> by alihanniba (<a href="http://codepen.io/alihanniba">@alihanniba</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+
+###当网站添加到主屏幕快速启动方式，可隐藏地址栏，仅针对ios的safari
+
+<p data-height="96" data-theme-id="0" data-slug-hash="pydqEo" data-default-tab="html" data-user="alihanniba" class="codepen">See the Pen <a href="http://codepen.io/alihanniba/pen/pydqEo/">pydqEo</a> by alihanniba (<a href="http://codepen.io/alihanniba">@alihanniba</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
