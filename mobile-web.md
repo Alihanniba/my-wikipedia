@@ -11,8 +11,8 @@ So ,现在把这些遇到的问题总结下来,以防以后踩坑.
 
 ###H5页面窗口自动调整带设备宽度,并禁止用户缩放页面
 
-<iframe height='127' scrolling='no' src='//codepen.io/alihanniba/embed/QNOzqW/?height=127&theme-id=0&default-tab=html' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/alihanniba/pen/QNOzqW/'>QNOzqW</a> by alihanniba (<a href='http://codepen.io/alihanniba'>@alihanniba</a>) on <a href='http://codepen.io'>CodePen</a>.
-</iframe>
+<p data-height="189" data-theme-id="0" data-slug-hash="QNOzqW" data-default-tab="html" data-user="alihanniba" class="codepen">See the Pen <a href="http://codepen.io/alihanniba/pen/QNOzqW/">QNOzqW</a> by alihanniba (<a href="http://codepen.io/alihanniba">@alihanniba</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 ###忽略将页面中的数字识别为电话号码
 
