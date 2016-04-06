@@ -33,6 +33,9 @@ So ,现在把这些遇到的问题总结下来,以防以后踩坑.
 
 ###将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式
 
+<p data-height="187" data-theme-id="0" data-slug-hash="MyOZPb" data-default-tab="html" data-user="alihanniba" class="codepen">See the Pen <a href="http://codepen.io/alihanniba/pen/MyOZPb/">将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式</a> by alihanniba (<a href="http://codepen.io/alihanniba">@alihanniba</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
 
 
 ###viewport模板——通用
