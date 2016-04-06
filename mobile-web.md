@@ -10,8 +10,6 @@
 So ,现在把这些遇到的问题总结下来,以防以后踩坑.
 
 ###H5页面窗口自动调整带设备宽度,并禁止用户缩放页面
-```
 <p data-height="268" data-theme-id="0" data-slug-hash="pydqEo" data-default-tab="result" data-user="alihanniba" class="codepen">See the Pen <a href="http://codepen.io/alihanniba/pen/pydqEo/">pydqEo</a> by alihanniba (<a href="http://codepen.io/alihanniba">@alihanniba</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-```
 
