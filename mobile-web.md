@@ -277,25 +277,357 @@ input[type=text]::-ms-clear,input[type=tel]::-ms-clear,input[type=number]::-ms-c
 ```
 参考[《如何改变表单元素的外观(for Webkit and IE10)》](http://www.cnblogs.com/PeunZhang/p/3522603.html)
 
+###打电话发短信写邮件怎么实现
+```
+<a href="tel:0755-10086">打电话给:0755-10086</a>
+<a href="sms:10086">发短信给: 10086</a>
+```
 
 
+写邮件，可参考[《移动web页面给用户发送邮件的方法》](http://www.cnblogs.com/PeunZhang/p/4952783.html)
+```
+<a href="mailto:peun@foxmail.com">peun@foxmail.com</a>
+```
+
+###模拟按钮hover效果
+移动端触摸按钮的效果，可明示用户有些事情正要发生，是一个比较好体验，但是移动设备中并没有鼠标指针，使用css的hover并不能满足我们的需求，还好国外有个激活css的active效果，代码如下，
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<style type="text/css">
+a{-webkit-tap-highlight-color: rgba(0,0,0,0);}
+.btn-blue{display:block;height:42px;line-height:42px;text-align:center;border-radius:4px;font-size:18px;color:#FFFFFF;background-color: #4185F3;}
+.btn-blue:active{background-color: #357AE8;}
+</style>
+</head>
+<body>
+
+<div class="btn-blue">按钮</div>
+
+<script type="text/javascript">
+document.addEventListener("touchstart", function(){}, true)
+</script>
+</body>
+</html>
+```
+
+兼容性ios5+、部分android 4+、winphone 8
+
+要做到全兼容的办法，可通过绑定ontouchstart和ontouchend来控制按钮的类名
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<style type="text/css">
+a{-webkit-tap-highlight-color: rgba(0,0,0,0);}
+.btn-blue{display:block;height:42px;line-height:42px;text-align:center;border-radius:4px;font-size:18px;color:#FFFFFF;background-color: #4185F3;}
+.btn-blue-on{background-color: #357AE8;}
+</style>
+</head>
+<body>
+
+<div class="btn-blue">按钮</div>
+
+<script type="text/javascript">
+var btnBlue = document.querySelector(".btn-blue");
+btnBlue.ontouchstart = function(){
+    this.className = "btn-blue btn-blue-on"
+}
+btnBlue.ontouchend = function(){
+    this.className = "btn-blue"
+}
+</script>
+</body>
+</html>
+```
+
+###屏幕旋转的事件和样式
+**事件**
+
+window.orientation，取值：正负90表示横屏模式、0和180表现为竖屏模式；
+
+```
+window.onorientationchange = function(){
+    switch(window.orientation){
+        case -90:
+        case 90:
+        alert("横屏:" + window.orientation);
+        case 0:
+        case 180:
+        alert("竖屏:" + window.orientation);
+        break;
+    }
+} 
+```
+**样式**
+
+```
+//竖屏时使用的样式
+@media all and (orientation:portrait) {
+.css{}
+}
+
+//横屏时使用的样式
+@media all and (orientation:landscape) {
+.css{}
+}
+```
+
+###audio元素和video元素在ios和andriod中无法自动播放
+应对方案：触屏即播
+```
+$('html').one('touchstart',function(){
+    audio.play()
+})
+```
+可参考[《无法自动播放的audio元素》](http://www.cnblogs.com/PeunZhang/archive/2013/02/05/2893093.html)
 
 
+###摇一摇功能
+
+HTML5 deviceMotion：封装了运动传感器数据的事件，可以获取手机运动状态下的运动加速度等数据。
+
+###手机拍照和上传图片
+
+accept 属性
+
+```
+accept 属性
+
+ 选择照片 -->
+<input type=file accept="image/*">
+ 选择视频 -->
+<input type=file accept="video/*">
+
+```
+
+**使用总结：**
+
+* ios 有拍照、录像、选取本地图片功能
+* 部分android只有选取本地图片功能
+* winphone不支持
+* input控件默认外观丑陋
+
+###微信浏览器用户调整字体大小后页面矬了，怎么阻止用户调整
+* android侧是复写了layoutinflater 对textview做了统一处理
+* ios侧是修改了body.style.webkitTextSizeAdjust值
+
+**解决方案:**
+
+* android使用以下代码，该接口只在微信浏览器下有效(感谢jationhuang同学提供)
+
+```
+/**
+ * 页面加入这段代码可使Android机器页面不再受到用户字体缩放强制改变大小
+ * 但是会有一个1秒左右的延迟，期间可以考虑通过loading展示
+ * 仅供参考
+ */
+(function(){
+    if (typeof(WeixinJSBridge) == "undefined") {
+        document.addEventListener("WeixinJSBridgeReady", function (e) {
+            setTimeout(function(){
+                WeixinJSBridge.invoke('setFontSizeCallback',{"fontSize":0}, function(res) {
+                    alert(JSON.stringify(res));
+                });
+            },0);
+        });
+    } else {
+        setTimeout(function(){
+            WeixinJSBridge.invoke('setFontSizeCallback',{"fontSize":0}, function(res) {
+                alert(JSON.stringify(res));
+            });
+        },0);
+    }
+})();
+```
+
+* ios使用-webkit-text-size-adjust禁止调整字体大小
+
+```
+body{-webkit-text-size-adjust: 100%!important;}
+```
 
 
+**最好的解决方案：**
 
 
+#### 消除transition闪屏
+
+```
+.css{
+/*设置内嵌的元素在 3D 空间如何呈现：保留 3D*/
+-webkit-transform-style: preserve-3d;
+/*（设置进行转换的元素的背面在面对用户时是否可见：隐藏）*/
+-webkit-backface-visibility: hidden;
+}
+```
+####开启硬件加速
+
+```
+.css {
+   -webkit-transform: translate3d(0, 0, 0);
+   -moz-transform: translate3d(0, 0, 0);
+   -ms-transform: translate3d(0, 0, 0);
+   transform: translate3d(0, 0, 0);
+}
+```
+
+参考[《用CSS开启硬件加速来提高网站性能》](http://www.cnblogs.com/PeunZhang/p/3510083.html)
+
+###取消input在ios下，输入的时候英文首字母的默认大写
+
+```
+<input autocapitalize="off" autocorrect="off" />
+```
+
+###android 上去掉语音输入按钮
+
+```
+input::-webkit-input-speech-button {display: none}
+```
+
+####android 2.3 bug
+* @-webkit-keyframes 需要以0%开始100%结束，0%的百分号不能去掉
+* after和before伪类无法使用动画animation
+* border-radius不支持%单位
+* translate百分比的写法和scale在一起会导致失效，例如-webkit-transform: translate(-50%,-50%) scale(-0.5, 1)
+
+####android 4.x bug
+
+* 三星 Galaxy S4中自带浏览器不支持border-radius缩写
+* 同时设置border-radius和背景色的时候，背景色会溢出到圆角以外部分
+* 部分手机(如三星)，a链接支持鼠标:visited事件，也就是说链接访问后文字变为紫色
+* android无法同时播放多音频audio
+
+参考[《border-radius 移动之伤》](https://github.com/yisibl/blog/issues/2)
+
+###设计高性能CSS3动画的几个要素
+
+* 尽可能地使用合成属性transform和opacity来设计CSS3动画，不使用position的left和top来定位
+* 利用translate3D开启GPU加速
+
+参考[《High Performance Animations》](http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/)
 
 
+###fixed bug
+
+* ios下fixed元素容易定位出错，软键盘弹出时，影响fixed元素定位
+* android下fixed表现要比iOS更好，软键盘弹出时，不会影响fixed元素定位
+* os4下不支持position:fixed
+
+解决方案
+
+[《移动端web页面使用position:fixed问题总结》](https://github.com/maxzhang/maxzhang.github.com/issues/2)
+[《使用iScroll.js解决ios4下不支持position:fixed的问题》](http://www.cnblogs.com/PeunZhang/archive/2013/06/14/3117589.html)
+
+###播放视频不全屏
+```
+1.目前只有ios7+、winphone8+支持自动播放
+2.支持Airplay的设备（如：音箱、Apple TV)播放
+x-webkit-airplay="true" 
+3.播放视频不全屏，ios7+、winphone8+支持，部分android4+支持（含华为、小米、魅族）
+webkit-playsinline="true" 
+-->
+<video x-webkit-airplay="true" webkit-playsinline="true" preload="auto" autoplay src="http://"></video>
+```
+###flex布局
+
+flex布局目前可使用在移动中，并非所有的语法都全兼容
+
+```
+/* ============================================================
+   flex：定义布局为盒模型
+   flex-v：盒模型垂直布局
+   flex-1：子元素占据剩余的空间
+   flex-align-center：子元素垂直居中
+   flex-pack-center：子元素水平居中
+   flex-pack-justify：子元素两端对齐
+   兼容性：ios 4+、android 2.3+、winphone8+
+   ============================================================ */
+.flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}
+.flex-v{-webkit-box-orient:vertical;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}
+.flex-1{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;}
+.flex-align-center{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;}
+.flex-pack-center{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}
+.flex-pack-justify{-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}
+```
+示例：两端对齐
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<style type="text/css">
+/* ============================================================
+   flex：定义布局为盒模型
+   flex-v：盒模型垂直布局
+   flex-1：子元素占据剩余的空间
+   flex-align-center：子元素垂直居中
+   flex-pack-center：子元素水平居中
+   flex-pack-justify：子元素两端对齐
+   兼容性：ios 4+、android 2.3+、winphone8+
+   ============================================================ */
+.flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}
+.flex-v{-webkit-box-orient:vertical;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}
+.flex-1{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;}
+.flex-align-center{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;}
+.flex-pack-center{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}
+.flex-pack-justify{-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}
+</style>
+</head>
+<body>
+
+<div class="flex flex-pack-justify">
+    <div>模块一</div>
+    <div>模块二</div>
+    <div>模块三</div>
+    <div>模块四</div>
+</div>
+
+</body>
+</html>
+```
 
 
+使用注意:
+
+* flex下的子元素必须为块级元素，非块级元素在android2.3机器下flex失效
+* flex下的子元素宽度和高度不能超过父元素，否则会导致子元素定位错误，例如水平垂直居中
+
+参考:
+[flexyboxes](http://the-echoplex.net/flexyboxes/)
+[“老”的Flexbox和“新”的Flexbox](http://www.w3cplus.com/css3/old-flexbox-and-new-flexbox.html)
+[跨浏览器的Flexbox](http://www.w3cplus.com/css3/advanced-cross-browser-flexbox.html)
 
 
+###FastClick
 
+消除在移动浏览器上触发click事件与一个物理Tap(敲击)之间的300延迟
 
+参考[《FastClick》](https://github.com/ftlabs/fastclick)
 
-
-
+#暂完结
 
 
 
