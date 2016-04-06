@@ -11,25 +11,25 @@ So ,现在把这些遇到的问题总结下来,以防以后踩坑.
 
 ###H5页面窗口自动调整带设备宽度,并禁止用户缩放页面
 
-```
+```html
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 ```
 
 ###忽略将页面中的数字识别为电话号码
 
-```
+```html
 <meta name="format-detection" content="telephone=no" />
 ```
 
 ###忽略Android平台中对邮箱地址的识别
 
-```
+```html
 <meta name="format-detection" content="email=no" />
 ```
 
 ###当网站添加到主屏幕快速启动方式，可隐藏地址栏，仅针对ios的safari
 
-```
+```html
 <meta name="apple-mobile-web-app-capable" content="yes" />
 ```
  * ios7.0版本以后，safari上已看不到效果
@@ -38,7 +38,7 @@ So ,现在把这些遇到的问题总结下来,以防以后踩坑.
 
 ###将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式
 
-```
+```html
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 ```
  * 可选default、black、black-translucent
@@ -49,7 +49,7 @@ So ,现在把这些遇到的问题总结下来,以防以后踩坑.
 
 ###viewport模板——通用
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -72,7 +72,7 @@ So ,现在把这些遇到的问题总结下来,以防以后踩坑.
 
 ###viewport模板 - target-densitydpi=device-dpi，android 2.3.5以下版本不支持
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -96,7 +96,7 @@ So ,现在把这些遇到的问题总结下来,以防以后踩坑.
 中文字体使用系统默认即可，英文用Helvetica
 * /* 移动端定义字体的代码 */
 
-```
+```css
 body{font-family:Helvetica;}
 ```
 参考《[移动端使用字体的思考](http://www.cnblogs.com/PeunZhang/p/3592096.html)》
@@ -109,7 +109,7 @@ body{font-family:Helvetica;}
 
 rem配置参考:
 
-```
+```css
 html{font-size:10px}
 @media screen and (min-width:321px) and (max-width:375px){html{font-size:11px}}
 @media screen and (min-width:376px) and (max-width:414px){html{font-size:12px}}
@@ -164,7 +164,7 @@ html{font-size:10px}
 * zepto的touch模块，tap事件也是为了解决在click的延迟问题
 
 ###触摸事件的响应顺序
-```
+```css
 1、ontouchstart 
 2、ontouchmove 
 3、ontouchend 
@@ -183,8 +183,8 @@ retina：一种具备超高像素密度的液晶屏，同样大小的屏幕上�
 
 设计稿切出来的图片长宽保证为偶数，并使用backgroud-size把图片缩小为原来的1/2
 
-```
-//例如图片宽高为：200px*200px，那么写法如下
+```css
+/*例如图片宽高为：200px*200px，那么写法如下*/
 .css{width:100px;height:100px;background-size:100px 100px;}
 ```
 其它元素的取值为原来的1/2，例如视觉稿40px的字体，使用样式的写法为20px
@@ -194,17 +194,19 @@ retina：一种具备超高像素密度的液晶屏，同样大小的屏幕上�
 ###ios系统中元素被触摸时产生的半透明灰色遮罩怎么去掉
 ios用户点击一个链接，会出现一个半透明灰色遮罩, 如果想要禁用，可设置-webkit-tap-highlight-color的alpha值为0，也就是属性值的最后一位设置为0就可以去除半透明灰色遮罩
 
-```
-a,button,input,textarea{-webkit-tap-highlight-color: rgba(0,0,0,0;)}
+```css
+a,button,input,textarea{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
 ```
 
 ###部分android系统中元素被点击时产生的边框怎么去掉
 
 android用户点击一个链接，会出现一个边框或者半透明灰色遮罩, 不同生产商定义出来额效果不一样，可设置-webkit-tap-highlight-color的alpha值为0去除部分机器自带的效果
 
-```
+```css
 a,button,input,textarea{
--webkit-tap-highlight-color: rgba(0,0,0,0;)
+-webkit-tap-highlight-color: rgba(0,0,0,0);
 -webkit-user-modify:read-write-plaintext-only; 
 }
 ```
@@ -219,13 +221,13 @@ a,button,input,textarea{
 
 ###webkit表单元素的默认外观怎么重置
 
-```
+```css
 .css{-webkit-appearance:none;}
 ```
 
 ###webkit表单输入框placeholder的颜色值能改变么
 
-```
+```css
 input::-webkit-input-placeholder{color:#AAAAAA;}
 input:focus::-webkit-input-placeholder{color:#EEEEEE;}
 ```
@@ -240,7 +242,7 @@ ios可以，android不行~
 
 ::-ms-expand 适用于表单选择控件下拉箭头的修改，有多个属性值，设置它隐藏 (display:none) 并使用背景图片来修饰可得到我们想要的效果。
 
-```
+```css
 select::-ms-expand {
 display: none;
 }
@@ -250,7 +252,7 @@ display: none;
 
 ::-ms-check 适用于表单复选框或单选按钮默认图标的修改，同样有多个属性值，设置它隐藏 (display:none) 并使用背景图片来修饰可得到我们想要的效果。
 
-```
+```css
 input[type=radio]::-ms-check,input[type=checkbox]::-ms-check{
     display: none;
 }
@@ -259,7 +261,7 @@ input[type=radio]::-ms-check,input[type=checkbox]::-ms-check{
 
 当表单文本输入框输入内容后会显示文本清除按钮，::-ms-clear 适用于该清除按钮的修改，同样设置使它隐藏 (display:none) 并使用背景图片来修饰可得到我们想要的效果。
 
-```
+```css
 input[type=text]::-ms-clear,input[type=tel]::-ms-clear,input[type=number]::-ms-clear{
     display: none;
 }
@@ -267,32 +269,32 @@ input[type=text]::-ms-clear,input[type=tel]::-ms-clear,input[type=number]::-ms-c
 
 ###禁止ios 长按时不触发系统的菜单，禁止ios&android长按时下载图片
 
-```
+```css
 .css{-webkit-touch-callout: none}
 ```
 ###禁止ios和android用户选中文字
 
-```
+```css
 .css{-webkit-user-select:none}
 ```
 参考[《如何改变表单元素的外观(for Webkit and IE10)》](http://www.cnblogs.com/PeunZhang/p/3522603.html)
 
 ###打电话发短信写邮件怎么实现
-```
+```css
 <a href="tel:0755-10086">打电话给:0755-10086</a>
 <a href="sms:10086">发短信给: 10086</a>
 ```
 
 
 写邮件，可参考[《移动web页面给用户发送邮件的方法》](http://www.cnblogs.com/PeunZhang/p/4952783.html)
-```
+```html
 <a href="mailto:peun@foxmail.com">peun@foxmail.com</a>
 ```
 
 ###模拟按钮hover效果
 移动端触摸按钮的效果，可明示用户有些事情正要发生，是一个比较好体验，但是移动设备中并没有鼠标指针，使用css的hover并不能满足我们的需求，还好国外有个激活css的active效果，代码如下，
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -323,7 +325,7 @@ document.addEventListener("touchstart", function(){}, true)
 
 要做到全兼容的办法，可通过绑定ontouchstart和ontouchend来控制按钮的类名
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -361,7 +363,7 @@ btnBlue.ontouchend = function(){
 
 window.orientation，取值：正负90表示横屏模式、0和180表现为竖屏模式；
 
-```
+```js
 window.onorientationchange = function(){
     switch(window.orientation){
         case -90:
@@ -376,13 +378,13 @@ window.onorientationchange = function(){
 ```
 **样式**
 
-```
-//竖屏时使用的样式
+```css
+/*竖屏时使用的样式*/
 @media all and (orientation:portrait) {
 .css{}
 }
 
-//横屏时使用的样式
+/*横屏时使用的样式*/
 @media all and (orientation:landscape) {
 .css{}
 }
@@ -390,7 +392,7 @@ window.onorientationchange = function(){
 
 ###audio元素和video元素在ios和andriod中无法自动播放
 应对方案：触屏即播
-```
+```js
 $('html').one('touchstart',function(){
     audio.play()
 })
@@ -406,12 +408,12 @@ HTML5 deviceMotion：封装了运动传感器数据的事件，可以获取手�
 
 accept 属性
 
-```
-accept 属性
+```html
+/*accept 属性*/
 
- 选择照片 -->
+ /*选择照片*/
 <input type=file accept="image/*">
- 选择视频 -->
+/* 选择视频 */
 <input type=file accept="video/*">
 
 ```
@@ -431,7 +433,7 @@ accept 属性
 
 * android使用以下代码，该接口只在微信浏览器下有效(感谢jationhuang同学提供)
 
-```
+```js
 /**
  * 页面加入这段代码可使Android机器页面不再受到用户字体缩放强制改变大小
  * 但是会有一个1秒左右的延迟，期间可以考虑通过loading展示
@@ -458,7 +460,7 @@ accept 属性
 
 * ios使用-webkit-text-size-adjust禁止调整字体大小
 
-```
+```css
 body{-webkit-text-size-adjust: 100%!important;}
 ```
 
@@ -468,7 +470,7 @@ body{-webkit-text-size-adjust: 100%!important;}
 
 #### 消除transition闪屏
 
-```
+```css
 .css{
 /*设置内嵌的元素在 3D 空间如何呈现：保留 3D*/
 -webkit-transform-style: preserve-3d;
@@ -478,7 +480,7 @@ body{-webkit-text-size-adjust: 100%!important;}
 ```
 ####开启硬件加速
 
-```
+```css
 .css {
    -webkit-transform: translate3d(0, 0, 0);
    -moz-transform: translate3d(0, 0, 0);
@@ -491,13 +493,13 @@ body{-webkit-text-size-adjust: 100%!important;}
 
 ###取消input在ios下，输入的时候英文首字母的默认大写
 
-```
+```html
 <input autocapitalize="off" autocorrect="off" />
 ```
 
 ###android 上去掉语音输入按钮
 
-```
+```css
 input::-webkit-input-speech-button {display: none}
 ```
 
@@ -536,20 +538,19 @@ input::-webkit-input-speech-button {display: none}
 [《使用iScroll.js解决ios4下不支持position:fixed的问题》](http://www.cnblogs.com/PeunZhang/archive/2013/06/14/3117589.html)
 
 ###播放视频不全屏
-```
-1.目前只有ios7+、winphone8+支持自动播放
-2.支持Airplay的设备（如：音箱、Apple TV)播放
-x-webkit-airplay="true" 
-3.播放视频不全屏，ios7+、winphone8+支持，部分android4+支持（含华为、小米、魅族）
-webkit-playsinline="true" 
--->
+```html
+/*1.目前只有ios7+、winphone8+支持自动播放*/
+/*2.支持Airplay的设备（如：音箱、Apple TV)播放*/
+/* x-webkit-airplay="true" */
+/*3.播放视频不全屏，ios7+、winphone8+支持，部分android4+支持（含华为、小米、魅族）*/
+/*webkit-playsinline="true" */
 <video x-webkit-airplay="true" webkit-playsinline="true" preload="auto" autoplay src="http://"></video>
 ```
 ###flex布局
 
 flex布局目前可使用在移动中，并非所有的语法都全兼容
 
-```
+```css
 /* ============================================================
    flex：定义布局为盒模型
    flex-v：盒模型垂直布局
@@ -568,7 +569,7 @@ flex布局目前可使用在移动中，并非所有的语法都全兼容
 ```
 示例：两端对齐
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
