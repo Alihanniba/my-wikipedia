@@ -534,8 +534,8 @@ input::-webkit-input-speech-button {display: none}
 
 解决方案
 
-[《移动端web页面使用position:fixed问题总结》](https://github.com/maxzhang/maxzhang.github.com/issues/2)
-[《使用iScroll.js解决ios4下不支持position:fixed的问题》](http://www.cnblogs.com/PeunZhang/archive/2013/06/14/3117589.html)
+* [《移动端web页面使用position:fixed问题总结》](https://github.com/maxzhang/maxzhang.github.com/issues/2)
+* [《使用iScroll.js解决ios4下不支持position:fixed的问题》](http://www.cnblogs.com/PeunZhang/archive/2013/06/14/3117589.html)
 
 ###播放视频不全屏
 ```html
@@ -617,9 +617,9 @@ flex布局目前可使用在移动中，并非所有的语法都全兼容
 * flex下的子元素宽度和高度不能超过父元素，否则会导致子元素定位错误，例如水平垂直居中
 
 参考:
-[flexyboxes](http://the-echoplex.net/flexyboxes/)
-[“老”的Flexbox和“新”的Flexbox](http://www.w3cplus.com/css3/old-flexbox-and-new-flexbox.html)
-[跨浏览器的Flexbox](http://www.w3cplus.com/css3/advanced-cross-browser-flexbox.html)
+* [flexyboxes](http://the-echoplex.net/flexyboxes/)
+* [“老”的Flexbox和“新”的Flexbox](http://www.w3cplus.com/css3/old-flexbox-and-new-flexbox.html)
+* [跨浏览器的Flexbox](http://www.w3cplus.com/css3/advanced-cross-browser-flexbox.html)
 
 
 ###FastClick
