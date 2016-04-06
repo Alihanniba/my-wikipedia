@@ -31,3 +31,57 @@ So ,现在把这些遇到的问题总结下来,以防以后踩坑.
 <p data-height="200" data-theme-id="0" data-slug-hash="QNOzqW" data-default-tab="html" data-user="alihanniba" class="codepen">See the Pen <a href="http://codepen.io/alihanniba/pen/QNOzqW/">QNOzqW</a> by alihanniba (<a href="http://codepen.io/alihanniba">@alihanniba</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
+###将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式
+
+<p data-height="176" data-theme-id="0" data-slug-hash="QNOzqW" data-default-tab="html" data-user="alihanniba" class="codepen">See the Pen <a href="http://codepen.io/alihanniba/pen/QNOzqW/">QNOzqW</a> by alihanniba (<a href="http://codepen.io/alihanniba">@alihanniba</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+###viewport模板——通用
+
+<p data-height="268" data-theme-id="0" data-slug-hash="QNOzqW" data-default-tab="html" data-user="alihanniba" class="codepen">See the Pen <a href="http://codepen.io/alihanniba/pen/QNOzqW/">QNOzqW</a> by alihanniba (<a href="http://codepen.io/alihanniba">@alihanniba</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+###viewport模板 - target-densitydpi=device-dpi，android 2.3.5以下版本不支持
+
+<p data-height="268" data-theme-id="0" data-slug-hash="QNOzqW" data-default-tab="html" data-user="alihanniba" class="codepen">See the Pen <a href="http://codepen.io/alihanniba/pen/QNOzqW/">QNOzqW</a> by alihanniba (<a href="http://codepen.io/alihanniba">@alihanniba</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+
+#常见问题
+###移动端如何定义字体font-family
+中文字体使用系统默认即可，英文用Helvetica
+
+<p data-height="146" data-theme-id="0" data-slug-hash="QNOzqW" data-default-tab="css" data-user="alihanniba" class="codepen">See the Pen <a href="http://codepen.io/alihanniba/pen/QNOzqW/">QNOzqW</a> by alihanniba (<a href="http://codepen.io/alihanniba">@alihanniba</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
