@@ -11,51 +11,95 @@ So ,现在把这些遇到的问题总结下来,以防以后踩坑.
 
 ###H5页面窗口自动调整带设备宽度,并禁止用户缩放页面
 
-<p data-height="176" data-theme-id="0" data-slug-hash="QNOzqW" data-default-tab="html" data-user="alihanniba" class="codepen">See the Pen <a href="http://codepen.io/alihanniba/pen/QNOzqW/">QNOzqW</a> by alihanniba (<a href="http://codepen.io/alihanniba">@alihanniba</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+```
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+```
 
 ###忽略将页面中的数字识别为电话号码
 
-<p data-height="174" data-theme-id="0" data-slug-hash="jqaXpb" data-default-tab="html" data-user="alihanniba" class="codepen">See the Pen <a href="http://codepen.io/alihanniba/pen/jqaXpb/">忽略将页面中的数字识别为电话号码</a> by alihanniba (<a href="http://codepen.io/alihanniba">@alihanniba</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-
+```
+<meta name="format-detection" content="telephone=no" />
+```
 
 ###忽略Android平台中对邮箱地址的识别
 
-<p data-height="190" data-theme-id="0" data-slug-hash="QNOzqW" data-default-tab="html" data-user="alihanniba" class="codepen">See the Pen <a href="http://codepen.io/alihanniba/pen/QNOzqW/">QNOzqW</a> by alihanniba (<a href="http://codepen.io/alihanniba">@alihanniba</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-
+```
+<meta name="format-detection" content="email=no" />
+```
 
 ###当网站添加到主屏幕快速启动方式，可隐藏地址栏，仅针对ios的safari
 
-<p data-height="198" data-theme-id="0" data-slug-hash="MyOZqj" data-default-tab="html" data-user="alihanniba" class="codepen">See the Pen <a href="http://codepen.io/alihanniba/pen/MyOZqj/">MyOZqj</a> by alihanniba (<a href="http://codepen.io/alihanniba">@alihanniba</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+```
+<meta name="apple-mobile-web-app-capable" content="yes" />
+```
+ * ios7.0版本以后，safari上已看不到效果
+
+
 
 ###将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式
 
-<p data-height="187" data-theme-id="0" data-slug-hash="MyOZPb" data-default-tab="html" data-user="alihanniba" class="codepen">See the Pen <a href="http://codepen.io/alihanniba/pen/MyOZPb/">将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式</a> by alihanniba (<a href="http://codepen.io/alihanniba">@alihanniba</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+```
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+```
+ * 可选default、black、black-translucent
+
+
 
 
 
 ###viewport模板——通用
 
-<p data-height="268" data-theme-id="0" data-slug-hash="QNOzqW" data-default-tab="html" data-user="alihanniba" class="codepen">See the Pen <a href="http://codepen.io/alihanniba/pen/QNOzqW/">QNOzqW</a> by alihanniba (<a href="http://codepen.io/alihanniba">@alihanniba</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+```
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<title>标题</title>
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+这里开始内容
+</body>
+
+</html>
+```
 
 ###viewport模板 - target-densitydpi=device-dpi，android 2.3.5以下版本不支持
 
-<p data-height="268" data-theme-id="0" data-slug-hash="QNOzqW" data-default-tab="html" data-user="alihanniba" class="codepen">See the Pen <a href="http://codepen.io/alihanniba/pen/QNOzqW/">QNOzqW</a> by alihanniba (<a href="http://codepen.io/alihanniba">@alihanniba</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+```
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi"> width取值与页面定义的宽度一致 -->
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<title>标题</title>
+<link rel="stylesheet" href="index.css">
+</head>
 
+<body>
+这里开始内容
+</body>
+```
 
 #常见问题
 ###移动端如何定义字体font-family
 中文字体使用系统默认即可，英文用Helvetica
+* /* 移动端定义字体的代码 */
 
-<p data-height="146" data-theme-id="0" data-slug-hash="QNOzqW" data-default-tab="css" data-user="alihanniba" class="codepen">See the Pen <a href="http://codepen.io/alihanniba/pen/QNOzqW/">QNOzqW</a> by alihanniba (<a href="http://codepen.io/alihanniba">@alihanniba</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-
+```
+body{font-family:Helvetica;}
+```
+参考《[移动端使用字体的思考](http://www.cnblogs.com/PeunZhang/p/3592096.html)》
 
 
 
