@@ -13,3 +13,19 @@
   a:active  {color:yellow; background-color:transparent; text-decoration:underline}
 </style>
 ```
+
+##target
+
+```html
+<a href="http://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+```
+
+##bookmark
+
+```html
+<a href="#tips">Visit the Useful Tips Section</a>
+```
+
+```html
+<a href="html_tips.html#tips">Visit the Useful Tips Section</a>
+```
