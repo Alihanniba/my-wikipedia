@@ -11,7 +11,7 @@
        * [Canvas](canvas.md)
        * [SVG](svg.md)
        * [Video](video.md)
-       * Audio
+       * [Audio](audio.md)
    * CSS
        * [1](c.1.md)
        * [2](c.2.md)
