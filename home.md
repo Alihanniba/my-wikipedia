@@ -4,7 +4,7 @@ This HTML tutorial contains hundreds of HTML examples.
 With our online HTML editor, you can edit the HTML, and click on a button to view the result.
 
 ##Example
-```
+```html
 <!DOCTYPE html>
   <head>
     <title>Page Title</title>
