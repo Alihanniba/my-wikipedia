@@ -12,6 +12,7 @@
        * [SVG](svg.md)
        * [Video](video.md)
        * [Audio](audio.md)
+       * Plug-ins
    * CSS
        * [1](c.1.md)
        * [2](c.2.md)
