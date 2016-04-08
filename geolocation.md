@@ -1,6 +1,7 @@
 # Geolocation
 
-```js
+
+``` html
 <script>
 var x = document.getElementById("demo");
 function getLocation() {
