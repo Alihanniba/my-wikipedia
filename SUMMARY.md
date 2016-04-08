@@ -15,7 +15,7 @@
        * [Plug-ins](plug-ins.md)
        * [Geolocation](geolocation.md)
        * [localStorage](localstorage.md)
-       * SSE
+       * [SSE](sse.md)
    * CSS
        * [1](c.1.md)
        * [2](c.2.md)
