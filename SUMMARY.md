@@ -9,6 +9,7 @@
        * [Attributes](attributes.md)
        * [Links](links.md)
        * [Canvas](canvas.md)
+       * SVG
    * CSS
        * [1](c.1.md)
        * [2](c.2.md)
