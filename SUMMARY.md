@@ -10,7 +10,7 @@
        * [Links](links.md)
        * [Canvas](canvas.md)
        * [SVG](svg.md)
-       * Video
+       * [Video](video.md)
    * CSS
        * [1](c.1.md)
        * [2](c.2.md)
