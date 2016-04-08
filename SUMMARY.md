@@ -14,7 +14,7 @@
        * [Audio](audio.md)
        * [Plug-ins](plug-ins.md)
        * [Geolocation](geolocation.md)
-       * localStorage
+       * [localStorage](localstorage.md)
    * CSS
        * [1](c.1.md)
        * [2](c.2.md)
