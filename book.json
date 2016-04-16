@@ -1,20 +1,68 @@
 {
-    "title": "My-WikiPedia",
-    "author": "alihanniba",
-    "language": "en",
-    "links": {
-        "sidebar": {
-            "alihanniba": "https://www.alihanniba.com"
+    "title" : "Gibook Use",
+    "description" : "记录Gitbook的配置和一些插件的使用",
+    "author" : "zhangjikai",
+    "generator": "site",
+    "language" : "zh-hans",
+    "gitbook" : "2.6.4",
+    "links" : {
+        "sidebar" : {
+            "Home" : "http://zhangjikai.com"
         }
     },
-    "plugins": [
+   "plugins": [
         "disqus",
+        "-search",
         "search-pro",
+        "advanced-emoji",
         "github",
+        "ace",
+        "emphasize",
+        "katex",
+        "anchors",
+        "include-codeblock",
+        "mermaid",
+        "tbfed-pagefooter",
+        "sectionx",
+        "expandable-chapters",
+        "codeblock-filename",
+        "baidu",
+        "sitemap@1.0.2"
+       
     ],
     "pluginsConfig": {
-        "github": {
-            "url": "https://github.com/alihanniba/"
+        "disqus": {
+            "shortName": "gitbookuse"
         },
+        "github": {
+            "url": "https://github.com/zhangjikai/gitbook-use"
+        },
+        
+        "sharing": {
+            "weibo": true,
+            "facebook": true,
+            "twitter": true,
+            "google": false,
+            "instapaper": false,
+             "vk": false,
+            "all": [
+                "facebook", "google", "twitter",
+                "weibo", "instapaper"
+            ]
+        },
+        
+        "tbfed-pagefooter": {
+            "copyright":"Copyright &copy zhangjikai.com 2015",
+            "modify_label": "该文件修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        
+        "baidu": {
+            "token" : "ff100361cdce95dd4c8fb96b4009f7bc"
+        },
+        "sitemap": {
+            "hostname": "http://gitbook.zhangjikai.com"
+        }
+        
     }
 }
