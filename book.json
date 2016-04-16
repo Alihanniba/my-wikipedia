@@ -52,6 +52,10 @@
         },
         "ga": {
             "token": "UA-71675100-1"
+        },
+        "addcssjs": {
+            "js": ["js/custom.js"],
+            "css": ["styles/website.css"]
         }
     },
     "styles": {
