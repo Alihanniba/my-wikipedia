@@ -42,11 +42,6 @@
                 "Gitbook Use"
             ]
         },
-        
-        "customtheme": {
-           "js": ['isset/gitbook.js']
-        },
-        
         "github": {
             "url": "https://github.com/alihanniba/"
         },
