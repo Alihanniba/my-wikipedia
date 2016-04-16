@@ -49,10 +49,17 @@ h1 , h2{
     
 }
 
+/* icon 颜色 */
 .book.color-theme-1 .book-header .btn {
     color: #6799ff!important;
 }
 
+
+/* 标题 */
+.book.color-theme-1 .book-header h1 {
+    color: #6799ff!important;
+    font-weight: bold!important;
+}
 
 
 
