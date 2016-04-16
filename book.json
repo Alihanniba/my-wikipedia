@@ -1,14 +1,15 @@
-{   "author": "alihanniba",
-    "generator": "site",
+{      
     "title": "My-WikiPedia",
+    "author": "alihanniba",
+    "generator": "site",
+    "description": "记录Gitbook的配置和一些插件的使用",
     "language": "en",
+    "gitbook": "2.6.4",
     "links": {
         "sidebar": {
             "alihanniba": "https://www.alihanniba.com"
         }
     },
-    "gitbook": "2.6.4",
-    "description": "记录Gitbook的配置和一些插件的使用",
     "plugins": [
         "disqus",
         "-search",
