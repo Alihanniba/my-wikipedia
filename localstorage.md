@@ -12,3 +12,9 @@ document.getElementById("result").innerHTML=localStorage.getItem("lastname");
 ```js
 localStorage.removeItem("lastname");
 ```
+
+
+---
+
+
+![](alihanniba.png)
