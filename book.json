@@ -46,6 +46,12 @@
         "github": {
             "url": "https://github.com/alihanniba/"
         },
+        
+        "customtheme": {
+           "js": ['custom/js/app.js']
+        },
+        
+        
         "tbfed-pagefooter": {
             "copyright": "Copyright &copy alihanniba.com 2016",
             "modify_label": "Modified By alihanniba",
