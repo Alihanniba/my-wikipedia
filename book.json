@@ -28,9 +28,12 @@
         "baidu",
         "sitemap@1.0.2",
         "splitter",
-        "fontsettings",
+        "fontsettings"
     ],
     "pluginsConfig": {
+        "disqus": {
+            "shortName": "gitbookuse"
+        },
         "search-pro": {
             "cutWordLib": "nodejieba",
             "defineWord": [
