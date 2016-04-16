@@ -28,7 +28,8 @@
         "baidu",
         "sitemap@1.0.2",
         "splitter",
-        "fontsettings"
+        "fontsettings",
+        "toggle-chapters"
     ],
     "pluginsConfig": {
         "disqus": {
@@ -40,7 +41,6 @@
                 "Gitbook Use"
             ]
         },
-        
         "github": {
             "url": "https://github.com/alihanniba/"
         },
