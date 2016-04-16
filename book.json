@@ -43,6 +43,9 @@
                 "Gitbook Use"
             ]
         },
+        "customtheme": {
+           "js": ['custom/js/app.js']
+        },
         "github": {
             "url": "https://github.com/alihanniba/"
         },
