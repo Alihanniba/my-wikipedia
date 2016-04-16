@@ -1,4 +1,14 @@
-{
+{   "author": "alihanniba",
+    "generator": "site",
+    "title": "My-WikiPedia",
+    "language": "zh-hans",
+    "links": {
+        "sidebar": {
+            "alihanniba": "https://www.alihanniba.com"
+        },
+    },
+    "gitbook": "2.6.4",
+    "description": "记录自己在开发道路上的学习历程",
     "plugins": [
         "disqus",
         "-search",
@@ -17,7 +27,6 @@
         "codeblock-filename",
         "baidu",
         "sitemap@1.0.2",
-        "duoshuo",
     ],
     "pluginsConfig": {
         "disqus": {
@@ -41,15 +50,5 @@
             "token": "ff100361cdce95dd4c8fb96b4009f7bc"
         },
     },
-    "author": "alihanniba",
-    "generator": "site",
-    "title": "My-WikiPedia",
-    "language": "zh-hans",
-    "links": {
-        "sidebar": {
-            "alihanniba": "https://www.alihanniba.com"
-        }
-    },
-    "gitbook": "2.6.4",
-    "description": "记录自己在开发道路上的学习历程"
+    
 }
