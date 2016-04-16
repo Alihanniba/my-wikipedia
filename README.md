@@ -11,15 +11,13 @@ this is my first book on gitbook.
 
 
 
-
-
 ---
 
 
 
 
 #one by one、、、
-![](mydddd.png)
+![](alihanniba.png)
 
 ---
 
