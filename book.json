@@ -57,6 +57,7 @@
         "customtheme": {
            "js": ['custom/js/app.js']
         },
+        
         "fontsettings": {
             "theme": "sepia",
             "family": "serif",
