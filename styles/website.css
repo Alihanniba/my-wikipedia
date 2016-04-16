@@ -33,5 +33,5 @@ h1 , h2{
 
 .book.color-theme-1 .book-summary ul.summary li a {
     font-weight: bold!important;
-    color: #fff;
+    color: #fff!important;
 }
