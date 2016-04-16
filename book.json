@@ -33,9 +33,6 @@
         "customtheme"
     ],
     "pluginsConfig": {
-        "customtheme": {
-           "js": ['custom/js/app.js']
-        },
         "disqus": {
             "shortName": "gitbookuse"
         },
