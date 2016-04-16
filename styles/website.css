@@ -1,26 +1,4 @@
 /* CSS for website */
-h1 , h2{
-    border-bottom: 1px solid #EFEAEA!important;
-    padding-bottom: 3px!important;
-}
 
-.book .book-body .page-wrapper .page-inner section.normal {
-    min-height:350px!important;
-    margin-bottom: 30px!important;
-}
-
-.book .book-body .page-wrapper .page-inner section.normal hr {
-    height: 0px!important;
-    padding: 0!important;
-    margin: 1.7em 0!important;
-    overflow: hidden!important;
-    background-color: #e7e7e7!important;
-    border-bottom: 1px dotted #e7e7e7!important;
-}
-
-
-.book .without-animation .book-summary {
-    background: url(../female-sugar-skull-art-web2.jpg) no-repeat!important;
-}
 
 
