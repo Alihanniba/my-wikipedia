@@ -50,9 +50,15 @@ h1 , h2{
     
 }
 
-/* icon 颜色 */
+/* icon 样式 */
 .book.color-theme-1 .book-header .btn {
     color: #6799ff!important;
+    opacity: 0.7!important;
+}
+
+.book.color-theme-1 .book-header .btn:hover {
+    color: #6799ff!important;
+    opacity: 1!important;
 }
 
 
@@ -62,6 +68,16 @@ h1 , h2{
     font-weight: bold!important;
 }
 
+/* 左右导向样式 */
+.book.color-theme-1 .book-body .navigation {
+    color: #6799ff!important;
+    opacity: 0.7!important;
+}
+
+.book.color-theme-1 .book-body .navigation {
+    color: #6799ff!important;
+    opacity: 1!important;
+}
 
 
 
