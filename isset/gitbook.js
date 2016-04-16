@@ -40,6 +40,6 @@ window.onload = function () {
             '.c2 {transform: translateX(200%);animation: anim 1000s linear infinite forwards; }'+
         '</style>'+
         '<script src="./index.js"></script>';
-    var div = document.getElementsByTagName('body');
-    div.appendChild(canvas);
+    
+    document.body.appendChild(canvas);
 }
