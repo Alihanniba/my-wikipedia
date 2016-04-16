@@ -47,6 +47,11 @@
             "copyright": "Copyright &copy alihanniba.com 2016",
             "modify_label": "Modified By alihanniba",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "fontsettings": {
+            "theme": "sepia",
+            "family": "serif",
+            "size":  1
         }
     }
 }
