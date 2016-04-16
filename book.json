@@ -1,13 +1,13 @@
 {
-    "title" : "Gibook Use",
-    "description" : "记录Gitbook的配置和一些插件的使用",
-    "author" : "zhangjikai",
+    "title" : "My-WikiPedia",
+    "description" : "记录自己在开发道路上的学习历程",
+    "author" : "alihanniba",
     "generator": "site",
     "language" : "zh-hans",
     "gitbook" : "2.6.4",
     "links" : {
         "sidebar" : {
-            "Home" : "http://zhangjikai.com"
+            "alihanniba" : "https://www.alihanniba.com"
         }
     },
    "plugins": [
