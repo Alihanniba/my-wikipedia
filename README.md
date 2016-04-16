@@ -4,10 +4,8 @@ this is my first book on gitbook.
 
 ---
 
+
 ![](ali-17@2x.png)
-
-
-
 
 
 
@@ -17,8 +15,8 @@ this is my first book on gitbook.
 
 
 #one by one、、、
-![](alihanniba.png)
 
+![](alihanniba.png)
 ---
 
 
