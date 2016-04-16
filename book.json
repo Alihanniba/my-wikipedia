@@ -27,7 +27,8 @@
         "codeblock-filename",
         "baidu",
         "sitemap@1.0.2",
-        "splitter"
+        "splitter",
+        "fontsettings"
     ],
     "pluginsConfig": {
         "disqus": {
