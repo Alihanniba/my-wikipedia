@@ -1,15 +1,14 @@
 {
-    "title" : "My-WikiPedia",
-    "description" : "My-WikiPedia",
-    "author" : "alihanniba",
-    "language" : "en",
-    "description" : "记录自己在开发道路上的学习历程",
-    "links" : {
-        "sidebar" : {
-            "alihanniba" : "https://www.alihanniba.com"
+    "title": "My-WikiPedia",
+    "description": "记录自己在开发道路上的学习历程",
+    "author": "alihanniba",
+    "language": "en",
+    "links": {
+        "sidebar": {
+            "alihanniba": "https://www.alihanniba.com"
         }
     },
-   "plugins": [
+    "plugins": [
         "disqus",
         "-search",
         "search-pro",
@@ -27,7 +26,8 @@
         "expandable-chapters",
         "codeblock-filename",
         "baidu",
-        "ga"
+        "ga",
+        "addcssjs"
     ],
     "pluginsConfig": {
         "disqus": {
@@ -35,40 +35,26 @@
         },
         "search-pro": {
             "cutWordLib": "nodejieba",
-            "defineWord" : ["Gitbook Use"]
+            "defineWord": [
+                "Gitbook Use"
+            ]
         },
         "github": {
             "url": "https://github.com/alihanniba/"
         },
-
-        "sharing": {
-            "weibo": true,
-            "facebook": true,
-            "twitter": true,
-            "google": false,
-            "instapaper": false,
-            "vk": false,
-            "all": [
-                "facebook", "google", "twitter",
-                "weibo", "instapaper"
-            ]
-        },
-
         "tbfed-pagefooter": {
-            "copyright":"Copyright &copy alihanniba.com 2016",
+            "copyright": "Copyright &copy alihanniba.com 2016",
             "modify_label": "Modified By alihanniba",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
-
         "baidu": {
-            "token" : "ff100361cdce95dd4c8fb96b4009f7bc"
+            "token": "ff100361cdce95dd4c8fb96b4009f7bc"
         },
-
         "ga": {
             "token": "UA-71675100-1"
         }
     },
-    "styles" : {
+    "styles": {
         "website": "styles/website.css",
         "ebook": "styles/ebook.css",
         "pdf": "styles/pdf.css",
