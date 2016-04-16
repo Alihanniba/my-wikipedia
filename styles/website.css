@@ -105,6 +105,9 @@ h1 , h2{
     border-bottom: 9px solid #333!important;
 }
 
+.color-theme-1 .dropdown-menu .button {
+    color: #6799ff!important;
+}
 
 
 
