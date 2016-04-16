@@ -27,8 +27,7 @@ h1 , h2{
 }
 
 /* 主体背景 */
-.book.color-theme-1 .book-body ,
-.book.color-theme-1 .book-body .page-wrapper .page-inner section{
+.book.color-theme-1 .book-body {
     background: url(../winter_farewell.png) no-repeat!important;
 }
 
