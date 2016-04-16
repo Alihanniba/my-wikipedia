@@ -32,6 +32,10 @@
         "duoshuo"
     ],
     "pluginsConfig": {
+        "duoshuo": {
+            "short_name": "gitbookuse",
+            "theme": "default"
+        }
         "search-pro": {
             "cutWordLib": "nodejieba",
             "defineWord": [
