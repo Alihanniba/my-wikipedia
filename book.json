@@ -42,6 +42,7 @@
                 "Gitbook Use"
             ]
         },
+        
         "github": {
             "url": "https://github.com/alihanniba/"
         },
@@ -57,6 +58,6 @@
             "theme": "sepia",
             "family": "serif",
             "size": 3
-        },
+        }
     }
 }
