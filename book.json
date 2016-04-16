@@ -62,11 +62,7 @@
                 "styles/website.css"
             ]
         },
-        "fontSettings": {
-            "theme": 'night',
-            "family": 'serif',
-            "size": 2
-        }
+        
     },
     "styles": {
         "website": "styles/website.css",
