@@ -101,6 +101,9 @@ h1 , h2{
     background-color: #333!important;
 }
 
+.color-theme-1 .dropdown-menu .dropdown-caret .caret-inner {
+    border-bottom: 9px solid #333!important;
+}
 
 
 
