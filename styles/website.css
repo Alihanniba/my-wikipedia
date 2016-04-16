@@ -13,7 +13,7 @@ h1 , h2{
     height: 0px!important;
     padding: 0!important;
     margin: 1.7em 0!important;
-    overflow: hidden!important; 
+    overflow: hidden!important;
     background-color: #e7e7e7!important;
     border-bottom: 1px dotted #e7e7e7!important;
 }
@@ -21,4 +21,9 @@ h1 , h2{
 
 .book .without-animation .book-summary {
     background: url(../female-sugar-skull-art-web2.jpg) no-repeat!important;
+}
+
+
+.book {
+    display: none!important;
 }
