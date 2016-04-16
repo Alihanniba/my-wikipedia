@@ -8,57 +8,5 @@
             "alihanniba": "https://www.alihanniba.com"
         }
     },
-    "plugins": [
-        "disqus",
-        "-search",
-        "search-pro",
-        "advanced-emoji",
-        "github",
-        "ace",
-        "anchors",
-        "emphasize",
-        "katex",
-        "include-codeblock",
-        "splitter",
-        "mermaid",
-        "tbfed-pagefooter",
-        "sectionx",
-        "expandable-chapters",
-        "codeblock-filename",
-        "baidu",
-        "ga",
-    ],
-    "pluginsConfig": {
-        "disqus": {
-            "shortName": "gitbookuse"
-        },
-        "search-pro": {
-            "cutWordLib": "nodejieba",
-            "defineWord": [
-                "Gitbook Use"
-            ]
-        },
-        "github": {
-            "url": "https://github.com/alihanniba/"
-        },
-        "tbfed-pagefooter": {
-            "copyright": "Copyright &copy alihanniba.com 2016",
-            "modify_label": "Modified By alihanniba",
-            "modify_format": "YYYY-MM-DD HH:mm:ss"
-        },
-        "baidu": {
-            "token": "ff100361cdce95dd4c8fb96b4009f7bc"
-        },
-        "ga": {
-            "token": "UA-71675100-1"
-        },
-        "addcssjs": {
-            "js": [
-                "js/custom.js"
-            ],
-            "css": [
-                "styles/website.css"
-            ]
-        }, 
-    }
+    
 }
