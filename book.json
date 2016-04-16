@@ -58,6 +58,9 @@
             "theme": "sepia",
             "family": "serif",
             "size": 3
-        }
+        },
+        "customtheme": {
+           "js": ['custom/js/app.js']
+        },
     }
 }
