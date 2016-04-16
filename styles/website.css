@@ -26,7 +26,7 @@ h1 , h2{
     color: #666!important;
 }
 
-/* 主题背景 */
+/* 主体背景 */
 .book.color-theme-1 .book-body ,
 .book.color-theme-1 .book-body .page-wrapper .page-inner section{
     background: #e7e7e7!important;
@@ -38,6 +38,7 @@ h1 , h2{
     color: #fff!important;
 }
 
+/* 主体字体 */
 .book.color-theme-1 .book-body .page-wrapper .page-inner section.normal {
     color: #333!important;
 }
