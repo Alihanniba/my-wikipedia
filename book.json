@@ -27,7 +27,8 @@
         "codeblock-filename",
         "baidu",
         "ga",
-        "addcssjs"
+        "addcssjs",
+        "fontsettings"
     ],
     "pluginsConfig": {
         "disqus": {
@@ -54,8 +55,12 @@
             "token": "UA-71675100-1"
         },
         "addcssjs": {
-            "js": ["js/custom.js"],
-            "css": ["styles/website.css"]
+            "js": [
+                "js/custom.js"
+            ],
+            "css": [
+                "styles/website.css"
+            ]
         }
     },
     "styles": {
