@@ -62,5 +62,6 @@
             "mobi": "styles/mobi.css",
             "epub": "styles/epub.css"
         }
-    }
+    },
+    "gitbook" : "2.6.4",
 }
