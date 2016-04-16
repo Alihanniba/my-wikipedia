@@ -15,12 +15,12 @@
     ],
     "pluginsConfig": {
         "disqus": {
-            "shortName": "gitbookuse"
+            "shortName": "alihanniba"
         },
         "search-pro": {
             "cutWordLib": "nodejieba",
             "defineWord": [
-                "Gitbook Use"
+                "alihanniba"
             ]
         },
         "github": {
