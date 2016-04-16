@@ -67,5 +67,12 @@
         "ga": {
             "token": "UA-71675100-1"
         }
+    },
+    "styles" : {
+        "website": "styles/website.css",
+        "ebook": "styles/ebook.css",
+        "pdf": "styles/pdf.css",
+        "mobi": "styles/mobi.css",
+        "epub": "styles/epub.css"
     }
 }
