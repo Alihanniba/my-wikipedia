@@ -29,7 +29,8 @@
         "sitemap@1.0.2",
         "splitter",
         "fontsettings",
-        "toggle-chapters"
+        "toggle-chapters",
+        "sectionx-strong"
     ],
     "pluginsConfig": {
         "disqus": {
