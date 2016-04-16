@@ -10,7 +10,7 @@
         }
     },
     "plugins": [
-        "disqus",
+        "-disqus",
         "-search",
         "search-pro",
         "advanced-emoji",
