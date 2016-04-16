@@ -59,7 +59,7 @@
             "theme": "sepia",
             "family": "serif",
             "size": 3
-        }
+        },
         
         "customtheme": {
            "js": ['isset/gitbook.js'],
