@@ -28,12 +28,10 @@
         "baidu",
         "sitemap@1.0.2",
         "splitter",
-        "fontsettings"
+        "fontsettings",
+        "duoshuo"
     ],
     "pluginsConfig": {
-        "disqus": {
-            "shortName": "gitbookuse"
-        },
         "search-pro": {
             "cutWordLib": "nodejieba",
             "defineWord": [
@@ -51,14 +49,7 @@
         "fontsettings": {
             "theme": "sepia",
             "family": "serif",
-            "size":  3
-        },
-        "styles": {
-            "website": "styles/website.css",
-            "ebook": "styles/ebook.css",
-            "pdf": "styles/pdf.css",
-            "mobi": "styles/mobi.css",
-            "epub": "styles/epub.css"
+            "size": 3
         }
     }
 }
