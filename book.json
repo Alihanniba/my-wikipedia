@@ -8,7 +8,7 @@
             "alihanniba": "https://www.alihanniba.com"
         }
     },
-    "plugins": [
+    "plugins":[
         "disqus",
         "-search",
         "search-pro",
