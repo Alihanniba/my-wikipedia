@@ -29,13 +29,8 @@
         "sitemap@1.0.2",
         "splitter",
         "fontsettings",
-        "duoshuo"
     ],
     "pluginsConfig": {
-        "duoshuo": {
-            "short_name": "your duoshuo's shortname",
-            "theme": "default"
-        }
         "search-pro": {
             "cutWordLib": "nodejieba",
             "defineWord": [
