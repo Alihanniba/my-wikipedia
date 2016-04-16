@@ -107,8 +107,13 @@ h1 , h2{
 
 .color-theme-1 .dropdown-menu .button {
     color: #6799ff!important;
+    opacity: 0.7;
 }
 
+.color-theme-1 .dropdown-menu .button:hover {
+    color: #6799ff!important;
+    opacity: 1;
+} 
 
 
 
