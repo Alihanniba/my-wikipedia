@@ -33,8 +33,14 @@
         "disqus": {
             "shortName": "gitbookuse"
         },
+        "search-pro": {
+            "cutWordLib": "nodejieba",
+            "defineWord": [
+                "Gitbook Use"
+            ]
+        },
         "github": {
-            "url": "https://github.com/zhangjikai/gitbook-use"
+            "url": "https://github.com/alihanniba/"
         },
         
         "sharing": {
