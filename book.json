@@ -60,9 +60,8 @@
             ],
             "css": [
                 "styles/website.css"
-            ]
-        },
-        
+            ],
+        }, 
     },
     
 }
