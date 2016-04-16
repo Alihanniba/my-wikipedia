@@ -49,6 +49,9 @@ h1 , h2{
     
 }
 
+.book.color-theme-1 .book-header .btn {
+    color: #6799ff!important;
+}
 
 
 
