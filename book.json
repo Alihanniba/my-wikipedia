@@ -57,9 +57,7 @@
         
         "customtheme": {
            "js": ['isset/gitbook.js'],
-        },
-        
-        "fontsettings": {
+        },"fontsettings": {
             "theme": "sepia",
             "family": "serif",
             "size": 3
