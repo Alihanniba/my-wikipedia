@@ -3,7 +3,7 @@
     "author": "alihanniba",
     "generator": "site",
     "description": "记录Gitbook的配置和一些插件的使用",
-    "language": "en",
+    "language": "zh-hans",
     "gitbook" : "2.6.4",
     "links": {
         "sidebar": {
