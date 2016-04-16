@@ -63,8 +63,8 @@
             ]
         },
         "fontSettings": {
-            "theme": 'night' ,
-            "family": 'sans',
+            "theme": 'night',
+            "family": 'serif',
             "size": 2
         }
     },
