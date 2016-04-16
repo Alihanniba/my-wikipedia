@@ -48,7 +48,7 @@
         },
         
         "customtheme": {
-           "js": ['custom/js/app.js']
+           "js": ['isset/gitbook.js']
         },
         
         
