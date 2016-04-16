@@ -53,7 +53,7 @@
         "customtheme": {
             "js": [
                 "isset/index.js",
-                "isset/gitbook.js",
+                "isset/gitbook.js"
             ]
         },
         "baidu": {
