@@ -22,10 +22,16 @@ h1 , h2{
 
 .book.color-theme-1 .book-summary {
     background: url(../female-sugar-skull-art-web2.jpg) no-repeat!important;
+    background-position: -150px 0px!important;
     color: #666!important;
 }
 
 .book.color-theme-1 .book-body ,
 .book.color-theme-1 .book-body .page-wrapper .page-inner section{
     background: #e7e7e7!important;
+}
+
+.book.color-theme-1 .book-summary ul.summary li a {
+    font-weight: bold!important;
+    color: #fff;
 }
