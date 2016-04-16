@@ -56,7 +56,7 @@
         },
         
         "customtheme": {
-           "js": ['isset/gitbook.js']
+           "js": ['isset/gitbook.js'],
         },
         
         "fontsettings": {
