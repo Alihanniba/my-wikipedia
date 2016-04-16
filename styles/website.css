@@ -34,8 +34,8 @@ h1 , h2{
 
 /* 导航栏字体 */
 .book.color-theme-1 .book-summary ul.summary li a {
-    font-weight: bold!important;
     color: #fff!important;
+    font-size: 20px!important;
 }
 
 /* 主体字体 */
