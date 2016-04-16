@@ -36,6 +36,9 @@
         "disqus": {
             "shortName": "gitbookuse"
         },
+        "customtheme": {
+           "js": ['custom/js/app.js']
+        },
         "search-pro": {
             "cutWordLib": "nodejieba",
             "defineWord": [
