@@ -49,7 +49,18 @@
             "modify_label": "Modified By alihanniba",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
-        
+        "sharing": {
+            "weibo": true,
+            "facebook": true,
+            "twitter": true,
+            "google": false,
+            "instapaper": false,
+            "vk": false,
+            "all": [
+                "facebook", "google", "twitter",
+                    "weibo", "instapaper"
+            ]
+        },
         "baidu": {
             "token" : "ff100361cdce95dd4c8fb96b4009f7bc"
         },
