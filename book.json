@@ -61,8 +61,6 @@
             "size": 3
         },
         
-        "customtheme": {
-            "js": ["isset/gitbook.js"],
-        },
+        
     }
 }
