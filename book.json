@@ -10,7 +10,8 @@
     },
     "plugins": [
         "disqus",
-        
+        "search-pro",
+        "github",
     ],
     "pluginsConfig": {
         "disqus": {
