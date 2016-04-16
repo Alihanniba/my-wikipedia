@@ -14,36 +14,8 @@
         "github",
     ],
     "pluginsConfig": {
-        "disqus": {
-            "shortName": "alihanniba"
-        },
-        "search-pro": {
-            "cutWordLib": "alihanniba",
-            "defineWord": [
-                "alihanniba"
-            ]
-        },
         "github": {
             "url": "https://github.com/alihanniba/"
         },
-        "tbfed-pagefooter": {
-            "copyright": "Copyright &copy alihanniba.com 2016",
-            "modify_label": "Modified By alihanniba",
-            "modify_format": "YYYY-MM-DD HH:mm:ss"
-        },
-        "baidu": {
-            "token": "ff100361cdce95dd4c8fb96b4009f7bc"
-        },
-        "ga": {
-            "token": "UA-71675100-1"
-        },
-        "addcssjs": {
-            "js": [
-                "js/custom.js"
-            ],
-            "css": [
-                "styles/website.css"
-            ]
-        }, 
     }
 }
