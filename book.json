@@ -54,9 +54,7 @@
         "baidu": {
             "token": "ff100361cdce95dd4c8fb96b4009f7bc"
         },
-        "customtheme": {
-           "js": ['custom/js/app.js']
-        },
+        
         
         "fontsettings": {
             "theme": "sepia",
