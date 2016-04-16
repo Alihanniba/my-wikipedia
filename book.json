@@ -33,7 +33,7 @@
     ],
     "pluginsConfig": {
         "duoshuo": {
-            "short_name": "gitbookuse",
+            "short_name": "your duoshuo's shortname",
             "theme": "default"
         }
         "search-pro": {
