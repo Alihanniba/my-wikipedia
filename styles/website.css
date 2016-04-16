@@ -29,3 +29,7 @@ h1 , h2{
     opacity: 0.5!important;
 }
 
+.book .color-theme-1 .book-body {
+    background: red!important;
+    opacity: 0.5!important;
+}
