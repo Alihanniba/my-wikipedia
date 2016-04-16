@@ -90,12 +90,12 @@ h1 , h2{
     color: #6799ff!important;
     opacity: 0.7;
     font-size: 34px!important;
+    right:7px!important;
 }
 
 .divider-content-summary:hover {
     color: #6799ff!important;
     opacity: 1;
-    font-size: 34px!important;
 }
 
 /* 页脚样式 */
