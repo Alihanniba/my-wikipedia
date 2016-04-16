@@ -61,6 +61,11 @@
             "css": [
                 "styles/website.css"
             ]
+        },
+        "fontSettings": {
+            "theme": 'night' ,
+            "family": 'sans',
+            "size": 2
         }
     },
     "styles": {
