@@ -4,7 +4,7 @@ this is my first book on gitbook.
 
 ---
 
-![alihanniba](ali-17@2x.png)
+![](ali-17@2x.png)
 
 
 
