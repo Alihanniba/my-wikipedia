@@ -20,7 +20,7 @@ h1 , h2{
 }
 
 
-.book .without-animation .book-summary {
+.book.color-theme-1 .book-summary {
     background: url(../female-sugar-skull-art-web2.jpg) no-repeat!important;
 }
 
