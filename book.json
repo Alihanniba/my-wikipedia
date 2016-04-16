@@ -36,6 +36,10 @@
         "disqus": {
             "shortName": "gitbookuse"
         },
+        "customtheme": {
+       "css": ['custom/css/app.css'], // custom is a folder on the root level
+       "js": ['custom/js/app.js']
+     },
         "search-pro": {
             "cutWordLib": "nodejieba",
             "defineWord": [
