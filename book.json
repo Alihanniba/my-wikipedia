@@ -60,8 +60,6 @@
             "modify_label": "Modified By alihanniba",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
-        
-        
         "sitemap": {
             "hostname": "http://gitbook.zhangjikai.com"
         }
