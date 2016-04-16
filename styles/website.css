@@ -33,7 +33,7 @@ body {
 
 
 .book.color-theme-1 .book-body {
-    background: url(../winter_farewell.png) no-repeat!important;
+    background: transparent!important;
 }
 
 .book.color-theme-1 .book-body .page-wrapper .page-inner section {
