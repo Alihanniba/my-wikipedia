@@ -9,24 +9,7 @@
         }
     },
     "plugins": [
-        "disqus",
-        "-search",
-        "search-pro",
-        "advanced-emoji",
-        "github",
-        "ace",
-        "anchors",
-        "emphasize",
-        "katex",
-        "include-codeblock",
-        "splitter",
-        "mermaid",
-        "tbfed-pagefooter",
-        "sectionx",
-        "expandable-chapters",
-        "codeblock-filename",
-        "baidu",
-        "ga",
+        
     ],
     "pluginsConfig": {
         "disqus": {
