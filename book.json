@@ -28,7 +28,8 @@
         "baidu",
         "sitemap@1.0.2",
         "splitter",
-        "fontsettings"
+        "fontsettings",
+        "sharing"
     ],
     "pluginsConfig": {
         "disqus": {
