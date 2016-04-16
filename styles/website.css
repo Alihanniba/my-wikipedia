@@ -29,7 +29,8 @@ h1 , h2{
     opacity: 0.5!important;
 }
 
-.book .color-theme-1 .book-body {
+.book .color-theme-1 .book-body ,
+.book.color-theme-1 .book-body .page-wrapper .page-inner section{
     background: red!important;
     opacity: 0.5!important;
 }
