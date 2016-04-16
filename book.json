@@ -26,7 +26,8 @@
         "expandable-chapters",
         "codeblock-filename",
         "baidu",
-        "sitemap@1.0.2",
+        "sitemap@1.0.2"
+       
     ],
     "pluginsConfig": {
         "disqus": {
