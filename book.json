@@ -57,17 +57,17 @@
             "token": "ff100361cdce95dd4c8fb96b4009f7bc"
         },
         "sharing": {
-        "weibo": true,
-        "facebook": true,
-        "twitter": true,
-        "google": false,
-        "instapaper": false,
-        "vk": false,
-        "all": [
-            "facebook", "google", "twitter",
-                "weibo", "instapaper"
-        ]
-    },
+            "weibo": true,
+            "facebook": true,
+            "twitter": true,
+            "google": false,
+            "instapaper": false,
+            "vk": false,
+            "all": [
+                "facebook", "google", "twitter",
+                    "weibo", "instapaper"
+            ]
+        },
         "fontsettings": {
             "theme": "sepia",
             "family": "serif",
