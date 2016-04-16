@@ -17,7 +17,7 @@
         "codeblock-filename",
         "baidu",
         "sitemap@1.0.2",
-        "duoshuo"
+        "duoshuo",
     ],
     "pluginsConfig": {
         "disqus": {
@@ -39,6 +39,10 @@
         },
         "baidu": {
             "token": "ff100361cdce95dd4c8fb96b4009f7bc"
+        },
+        "duoshuo": {
+            "short_name": "your duoshuo's shortname",
+            "theme": "default"
         }
     },
     "author": "alihanniba",
