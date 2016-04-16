@@ -31,6 +31,10 @@ h1 , h2{
     background: url(../winter_farewell.png) no-repeat!important;
 }
 
+.book.color-theme-1 .book-body .page-wrapper .page-inner section {
+    background: #e7e7e7!important;
+}
+
 /* 导航栏字体 */
 .book.color-theme-1 .book-summary ul.summary li a {
     color: #fff!important;
