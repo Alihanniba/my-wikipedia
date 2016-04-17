@@ -61,19 +61,18 @@ ___
 | Cache-Control | 告诉所有的缓存机制是否可以缓存及哪种类型 | Cache-Control:no-cache |
 | Content-Encoding | web服务器支持的返回内容压缩编码类型. | Content-Encoding:gzip |
 | Content-Language | 响应体的语言 | Content-Language:en,zh |
-| CContent-Language:en,zhContent-Language:en,zh | 1:8 | 2:8 |
-| 0:9 | 1:9 | 2:9 |
-| 0:10 | 1:10 | 2:10 |
-| 0:11 | 1:11 | 2:11 |
-| 0:12 | 1:12 | 2:12 |
-| 0:13 | 1:13 | 2:13 |
-| 0:14 | 1:14 | 2:14 |
-| 0:15 | 1:15 | 2:15 |
-| 0:16 | 1:16 | 2:16 |
-| 0:17 | 1:17 | 2:17 |
-| 0:18 | 1:18 | 2:18 |
-| 0:19 | 1:19 | 2:19 |
-| 0:20 | 1:20 | 2:20 |
+| Content-Length | 响应体的长度 | Content-Length:348 |
+| Content-Location | 请求资源的可替代的备用搞得另一地址 | Content-Location:/index.html |
+| Content-MD5 | 返回资源的MD5校验值 | Content-MD5:Q2hlY2sgSW50ZWdyaXR5IQ== |
+| Content-Range | 在整个返回体中本部分的字节位置 | Content-Range:bytes 21010-47021/47022 |
+| Content-Type | 返回类容的MIME类型 | Content-Type:text/html; charset=utf-8 |
+| Date | 原始服务器消息发出的时间 | Data:Tue, 15 Nov 2016 08:12:31 GMT |
+| ETag | 请求变量的实体标签的当前值 | ETag: “737060cd8c284d8af7ad3082f209582d” |
+| Expires | 响应过期的日期和时间 | Expires: Thu, 01 Dec 2016 16:00:00 GMT |
+| Last-Modified | 请求资源的最后修改时间 | Last-Modified: Tue, 15 Nov 2016 12:45:26 GMT
+ |
+| Location | 用来重定向接收方到非请求URL的位置来完成请求或标示新的资源 | https://www.alihanniba.com |
+|  | 1:20 | 2:20 |
 | 0:21 | 1:21 | 2:21 |
 | 0:22 | 1:22 | 2:22 |
 | 0:23 | 1:23 | 2:23 |
