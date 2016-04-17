@@ -72,16 +72,18 @@ ___
 | Last-Modified | 请求资源的最后修改时间 | Last-Modified: Tue, 15 Nov 2016 12:45:26 GMT
  |
 | Location | 用来重定向接收方到非请求URL的位置来完成请求或标示新的资源 | https://www.alihanniba.com |
-|  | 1:20 | 2:20 |
-| 0:21 | 1:21 | 2:21 |
-| 0:22 | 1:22 | 2:22 |
-| 0:23 | 1:23 | 2:23 |
-| 0:24 | 1:24 | 2:24 |
-| 0:25 | 1:25 | 2:25 |
-| 0:26 | 1:26 | 2:26 |
-| 0:27 | 1:27 | 2:27 |
-| 0:28 | 1:28 | 2:28 |
-| 0:29 | 1:29 | 2:29 |
+| Pragma | 包括实现特定的指令,它可应用到响应链上额任何接收方 | Pragma:no-cache |
+| Proxy-Authenticate | 它指出认证方案和可应用到代理的该url上的参数 | Proxy-Authenticate:Basic |
+| refresh | 应用于重定向或一个新的资源被创造,在5秒之后重定向(由网景提出,被大部分浏览器支持) | Refresh:5;url=https://www.alihanniba.com |
+| Retry-After | 如果实体暂时不客气,通知客户端在指定时间之后再次尝试 | Retry-After:120 |
+| Server | web服务器软件名称 | Server: Apache/1.3.27 (Unix) (Red-Hat/Linux) |
+| Set-Cookie | 设置Http Cookie | Set-Cookie: UserID=JohnDoe; Max-Age=3600; Version=1 |
+| Trailer | 指出头域在分块传输编码的尾部存在 | Trailer:Max-Forwards |
+| Transfer-Encoding | 文件传输编码 | Transfer-Encoding:chunked |
+| Vary | 告诉下游代理是使用缓存响应还是从原始服务器请求 | Vary:* |
+| Via | 告知代理客户端响应是通过哪里发送的 | Via:1.0 fred,1.1alihanniba.com(Apache/1.1) |
+|  | 1:30 | 2:30 |
 | 0:30 | 1:30 | 2:30 |
+
 
 
