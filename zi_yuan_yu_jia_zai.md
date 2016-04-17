@@ -8,4 +8,17 @@ ___
 ___
 通过 DNS 预解析来告诉浏览器未来我们可能从某个特定的 URL 获取资源，当浏览器真正使用到该域中的某个资源时就可以尽快地完成 DNS 解析。例如，我们将来可能从alihanniba.com获取图片或音频资源，那么可以在文档顶部的```<head>```标签中加入以下内容：
 
-```<link rel="dns-prefetch" href="//alihanniba.com">``` 
+```
+<link rel="dns-prefetch" href="//alihanniba.com">
+```
+
+当我们从该 URL 请求一个资源时，就不再需要等待 DNS 的解析过程。该技术对使用第三方资源特别有用。
+
+
+##预连接 Preconnect
+___
+与 DNS 预解析类似，preconnect不仅完成 DNS 预解析，同时还将进行 TCP 握手和建立传输层协议。可以这样使用：
+
+```
+<link rel="preconnect" href="http://alihanniba.com"> 
+```
