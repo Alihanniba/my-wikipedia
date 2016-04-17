@@ -139,3 +139,6 @@ body {
     border-color:#888!important;
 }
 
+.book.color-theme-1 .book-body .page-wrapper .page-inner section.normal table tr:nth-child(2n) {
+    background: #fff!important;
+}
