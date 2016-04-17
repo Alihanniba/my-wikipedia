@@ -10,6 +10,7 @@ HTTP(HyperTextTransferProtocol)即超文本传输协议,目前网页传输的通
 ---
 
 ##Request 部分
+___
 
 | Header | 解释 | 示例 |
 | -- | -- | -- |
@@ -49,3 +50,4 @@ ___
 
 
 ##Response 部分
+___
