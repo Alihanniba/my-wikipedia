@@ -39,7 +39,9 @@ HTTP(HyperTextTransferProtocol)即超文本传输协议,目前网页传输的通
 | Referer | 先前网页的地址,当前请求网页紧随其后,即来路 | Referer: https://www.alihanniba.com |
 | TE | 客户端愿意接受的传输编码,并通知服务器接受接受尾加头信息 | TE:trailes,deflate;q=0.5 |
 | Upgrade | 向服务器指定某种传输协议以便服务器进行转换(如果支持) | Upgrade: HTTP/2.0, SHTTP/1.3, IRC/6.9, RTA/x11 |
-|  | 1:20 | 2:20 |
+| User-Agent | User-Agent的内容包含发出请求的用户信息 | User-Agent:Mozilla/5.0(linux;X11) |
+| Via | 通知中间网关或代理服务器地址,通信协议  | Via: 1.0 fred, 1.1 nowhere.com (Apache/1.1) | 
+| Warning | 关于消息实体的警告信息 | Warn:199 Miscellaneous warning | 
 
 
 
