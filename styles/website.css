@@ -135,4 +135,7 @@ body {
     background:#fff!important;
 }
 
+.book.color-theme-1 .book-body .page-wrapper .page-inner section.normal table th, .book.color-theme-1 .book-body .page-wrapper .page-inner section.normal table td {
+    border-color:#888!important;
+}
 
