@@ -82,8 +82,8 @@ ___
 | Transfer-Encoding | 文件传输编码 | Transfer-Encoding:chunked |
 | Vary | 告诉下游代理是使用缓存响应还是从原始服务器请求 | Vary:* |
 | Via | 告知代理客户端响应是通过哪里发送的 | Via:1.0 fred,1.1alihanniba.com(Apache/1.1) |
-|  | 1:30 | 2:30 |
-| 0:30 | 1:30 | 2:30 |
+| Warning | 警告实体可能存在的问题 | Warning:199 Miscellaneous warning |
+| WWW-Authenticate | 表明客户端请求实体应该使用的授权方案 | WWW-Authenticate:Basic |
 
 
 
