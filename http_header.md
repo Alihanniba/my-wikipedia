@@ -44,4 +44,8 @@ HTTP(HyperTextTransferProtocol)即超文本传输协议,目前网页传输的通
 | Warning | 关于消息实体的警告信息 | Warn:199 Miscellaneous warning | 
 
 
+___
 
+
+
+##Response 部分
