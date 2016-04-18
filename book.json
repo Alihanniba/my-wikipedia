@@ -64,6 +64,15 @@
                 "isset/index.js",
                 "isset/gitbook.js"
             ]
+        },
+        "page-footer": {
+            "description": "modified at",
+            "author": "alihanniba",
+            "wisdom": "GO TO BE A FULL STACK   GO TO BE A ARCHITECT",
+            "format": "YYYY-MM-DD HH:mm:ss",
+            "copyright": "Copyright © alihanniba",
+            "timeColor": "#666",
+            "copyrightColor": "#666"
         }
     }
 }
