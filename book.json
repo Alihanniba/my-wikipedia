@@ -21,7 +21,6 @@
         "anchors",
         "include-codeblock",
         "mermaid",
-        "tbfed-pagefooter",
         "sectionx",
         "expandable-chapters",
         "codeblock-filename",
@@ -45,11 +44,6 @@
         },
         "github": {
             "url": "https://github.com/alihanniba/"
-        },
-        "tbfed-pagefooter": {
-            "copyright": "Copyright &copy alihanniba.com 2016",
-            "modify_label": "Modified By alihanniba",
-            "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
         "baidu": {
             "token": "ff100361cdce95dd4c8fb96b4009f7bc"
