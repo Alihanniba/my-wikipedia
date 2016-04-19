@@ -362,12 +362,33 @@ window.onerror = handleError;
 window.navigate(“https://www.alihanniba.com/”);
 ```
 
+### 68.JS中的打印:
+```js
+window.print("alihanniba");
+```
 
+### 69.JS中的窗口滚动条:
+```js
+window.scroll(x,y);
+```
 
+### 70.JS中的窗口滚动到位置:
+```js
+window.scrollby
+```
 
-
-
-
+### 71.JS中设置时间间隔:
+```js
+setInterval(“expr”,msecDelay);
+```
+或
+```js
+setInterval(funcRef,msecDelay);
+```
+或
+```js
+setTimeout
+```
 
 
 
