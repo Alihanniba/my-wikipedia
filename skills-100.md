@@ -37,10 +37,29 @@ parseInt(),parseFloat()
 ```js
 (“”+变量)
 ```
+### 10. JS中的取字符串长度是:
+```js
+length
+```
+### 11. JS中的字符与字符相连接使用+号:
 
+### 12. JS中的比较操作符有: ==等于,!=不等于,>,>=,<.<=:
 
+### 13.JS中声明变量使用: var来进行声明
 
+### 14.JS中的判断语句结构:
+```js
+if(condition) {
 
+} else {
+
+}
+```
+
+### 15.JS中的循环结构:
+for([initial e¬xpression];[condition];[upadte e¬xpression]) {
+    inside loop
+}
 
 
 
