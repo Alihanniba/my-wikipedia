@@ -186,20 +186,39 @@ string.toLowerCase();
 
 ### 37.返回字符串2在字符串1中出现的位置:
 ```js
-String1.indexOf(“alihanniba”);
+alihanniba1.indexOf(“alihanniba2”);
 
 ```
 ```js
-String1.indexOf(“alihanniba”)!=-1则说明没找到
+alianniba1.indexOf(“alihanniba2”)!=-1则说明没找到
 ```
 ### 38.取字符串中指定位置的一个字符:
 ```js
 alihanniba.charAt(9);
 ```
 
+### 39.取出字符串中指定起点和终点的子字符串:
+```js
+alihanniba.substring(2,6);
+```
+
+### 40.数学函数:Math.PI(返回圆周率),Math.SQRT2(返回开方)
+```js
+Math.max(value1,value2)   返回两个数中的最在值,
+
+Math.pow(value1,10)   返回value1的十次方,
+
+Math.round(value1)   四舍五入函数,
+
+Math.floor(Math.random()*(n+1))   返回随机数
 
 
+```
 
+### 41.定义日期型变量:
+```js
+var today = new Date();
+```
 
 
 
