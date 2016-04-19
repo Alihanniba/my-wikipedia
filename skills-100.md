@@ -288,5 +288,16 @@ Array,Boolean,Date,Error,EvalError,Function,Math,Number,Object,RangeError,Refere
 document.getElementByid(“表单元素”).tabIndex = 1
 ```
 
+### 53.可设置元素是否可被修改,
+```js
+contentEditable
+```
+返回是否可修改的状态.
+```js
+isContentEditable
+```
+
+### 54.isDisabled判断是否为禁止状态.disabled设置禁止状态
+
 
 
