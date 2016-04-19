@@ -29,6 +29,6 @@
            * [Resources-preload](resources-preload.md)
        * Front-Mobile
 * [Server](hou_duan.md)
-   * [PHP](1.php.md)
+   * [PHP](php.md)
    * [NodeJs](nodejs.md)
 
