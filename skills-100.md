@@ -2,7 +2,6 @@
 ___
 
 ### 1.js输出语句
-
 ```js
 document.write("");
 ```
