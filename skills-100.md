@@ -409,7 +409,7 @@ onunload();
 ```
 ### 75.window.location的属性:
 ```js
-protocol(http : ),hostname(www.alihanniba.com),port(80),host(www.alihanniba.com:80),pathname(“/a/a.html”),hash(“#giantGizmo”,指跳转到相应的锚记),href(全部的信息)
+protocol(http : ),hostname(www.alihanniba.com),port(80),host(www.alihanniba.com:80),pathname(“/a/a.html”),hash(“#giantGizmo”,指跳转到相应的锚记),href(全部的信息);
 ```
 
 ### 76.刷新当前页面.
