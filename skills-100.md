@@ -279,8 +279,14 @@ Array,Boolean,Date,Error,EvalError,Function,Math,Number,Object,RangeError,Refere
 
 ### 49.JS中的换行:/n
 
+### 50.isNaN(变量):测试是否为数值型
 
+### 51.JS中的all代表其下层的全部元素
 
+### 52.JS中的焦点顺序:
+```js
+document.getElementByid(“表单元素”).tabIndex = 1
+```
 
 
 
