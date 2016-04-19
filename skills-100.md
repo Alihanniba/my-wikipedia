@@ -452,6 +452,43 @@ document.body.noWrap=true;
 alihanniba.charAt(0);
 ```
 
+### 84.返回第几个字符的ASCii码值.
+```js
+”alihanniba”.charCodeAt(第几个);
+```
+
+### 85.字符串连接,或用+=进行连接:
+```js
+string.concat(string2);
+```
+
+### 86.变量.indexOf(“字符”,起始位置),返回第一个出现的位置(从0开始计算)
+
+### 87.最后一次出现的位置.
+```js
+string.lastIndexOf(searchString[,startIndex]);
+```
+
+### 88.判断字符是否匹配.
+```js
+string.match(regExpression);
+```
+
+### 89.替换现有字符串.
+```js
+string.replace(regExpression,replaceString);
+```
+
+### 90.返回一个数组存储值.
+```js
+string.split(分隔符);
+```
+
+
+
+
+
+
 
 
 
