@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [Client](qian_duan.md)
-   * [HTML](1.javascript.md)
+   * [HTML](HTML.md)
        * [HOME](home.md)
        * [Introduction](introduction.md)
        * [Basic](basic.md)
