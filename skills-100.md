@@ -220,10 +220,56 @@ Math.floor(Math.random()*(n+1))   返回随机数
 var today = new Date();
 ```
 
+### 42.日期函数列表:
+```js
+dateObj.getTime() 得到时间,
+
+dateObj.getYear() 得到年份,
+
+dateObj.getFullYear()得到四位的年份,
+
+dateObj.getMonth()得到月份,
+
+dateObj.getDate()得到日,
+
+dateObj.getDay()得到日期几,
+
+dateObj.getHours()得到小时,
+
+dateObj.getMinutes()得到分,
+
+dateObj.getSeconds()得到秒,
+
+dateObj.setTime(value)设置时间,
+
+dateObj.setYear(val)设置年,
+
+dateObj.setMonth(val)设置月,
+
+dateObj.setDate(val)设置日,
+
+dateObj.setDay(val)设置星期几,
+
+dateObj.setHours设置小时,
+
+dateObj.setMinutes(val)设置分,
+
+dateObj.setSeconds(val)设置秒 [注意:此日期时间从0开始计]
+```
 
 
+### 43.FRAME的表示方式:
+```js
+[window.]frames[n].ObjFuncVarName,frames[“frameName”].ObjFuncVarName,frameName.ObjFuncVarName
+```
 
+### 44.parent代表父亲对象,top代表最顶端对象:
 
+### 45.打开子窗口的父窗口为: opener:
+
+### 46.表示当前所属的位置: this
+
+### 47.当在超链接中调用JS函数时用: (javascript : ) 来开头后面加函数名
 
 
 
