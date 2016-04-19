@@ -341,6 +341,10 @@ window.status=’alihanniba’,
 window.defaultStatus = ‘alihanniba’;
 ```
 
+### 64.添加到收藏夹
+```js
+external.AddFavorite(“https://www.alihanniba.com/”;,”alihanniba”);
+```
 
 
 
