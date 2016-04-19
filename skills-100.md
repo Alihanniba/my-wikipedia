@@ -186,7 +186,8 @@ string.toLowerCase();
 
 ### 37.返回字符串2在字符串1中出现的位置:
 ```js
-String1.indexOf(“String2”)
+String1.indexOf(“String2”);
+
 ```
 ```js
 String1.indexOf(“String2”)!=-1则说明没找到
