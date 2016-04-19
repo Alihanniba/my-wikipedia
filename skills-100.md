@@ -153,6 +153,36 @@ for (var i = 0; i < form.length; i++){
 }
 ```
 
+### 31.复选按钮在JS中判断是否选中:
+```js
+document.forms[0].checkThis.checked (checked属性代表为是否选中返回TRUE或FALSE)
+```
+
+### 32.单选按钮组(单选按钮的名称必须相同):取单选按钮组的长度:
+```js
+document.forms[0].groupName.length;
+```
+
+### 33.单选按钮组判断是否被选中也是用checked.
+
+### 34.下拉列表框的值:
+```js
+document.forms[0].selectName.options[n].value (n有时用下拉列表框名称加上.selectedIndex来确定被选中的值)
+```
+
+### 35.字符串的定义:
+```js
+var myString = new String(“This is lightsword”);
+```
+
+### 36 字符串转成大写:
+```js
+string.toUpperCase();
+```
+字符串转成小写:
+```js
+string.toLowerCase();
+```
 
 
 
