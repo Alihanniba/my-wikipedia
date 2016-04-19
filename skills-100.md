@@ -71,18 +71,53 @@ break
 ### 17.JS中的函数定义
 ```js
 function alihanniba([parameter],…) {
-    statement[s]
+    statement[s];
 }
 ```
 
+### 18.当文件中出现多个form表单时.可以用
+```js
+document.forms[0],document.forms[1]
+```
+来代替.
+### 19.窗口
+* 打开窗口:
+```js
+window.open();
+```
+* 关闭一个窗口:
+```js
+window.close();
+```
+* 窗口本身:
+```js
+self
+```
 
+### 20.状态栏的设置: 
+```js
+ window.status=”alihanniba”;
+```
 
+### 21.弹出提示信息:
+```js
+window.alert(“alihanniba”);
+```
 
+### 22.弹出确认框:
+```js
+window.confirm("alihanniba");
+```
 
+### 23.弹出输入提示框:
+```js
+window.prompt("alihanniba");
+```
 
-
-
-
+### 24.指定当前显示链接的位置::
+```js
+window.location.href=”www.alihanniba.com”
+```
 
 
 
