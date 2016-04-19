@@ -398,6 +398,21 @@ function verifyClose(){
 window.onbeforeunload=verifyClose;
 ```
 
+### 73.当窗体第一次调用时使用的文件句柄: 
+```js
+onload();
+```
+
+### 74.当窗体关闭时调用的文件句柄: 
+```js
+onunload();
+```
+### 75.window.location的属性:
+```js
+protocol(http : ),hostname(www.alihanniba.com),port(80),host(www.alihanniba.com:80),pathname(“/a/a.html”),hash(“#giantGizmo”,指跳转到相应的锚记),href(全部的信息)
+```
+
+
 
 
 
