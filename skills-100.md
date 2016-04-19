@@ -412,7 +412,34 @@ onunload();
 protocol(http : ),hostname(www.alihanniba.com),port(80),host(www.alihanniba.com:80),pathname(“/a/a.html”),hash(“#giantGizmo”,指跳转到相应的锚记),href(全部的信息)
 ```
 
+### 76.刷新当前页面.
+```js
+window.location.reload();
+```
 
+### 77.返回上一页
+```js
+window.history.back();
+```
 
+### 78.返回下一页
+```js
+window.history.forward();
+```
+
+### 79.(返回第几页,也可以使用访问过的URL)
+```js
+window.history.go();
+```
+
+### 80.不换行的输出
+```js
+document.write();
+```
+
+### 81.换行的输出
+```js
+document.writeln();
+```
 
 
