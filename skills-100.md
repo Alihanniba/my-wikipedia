@@ -11,15 +11,15 @@ document.write("");
 ```
 ### 3. 传统的HTML文档顺序是:
 ```js
-document->html->(head,body)
+document->html->(head,body);
 ```
 ### 4. 一个浏览器窗口中的DOM顺序是:
 ```js
-window->(navigator,screen,history,location,document)
+window->(navigator,screen,history,location,document);
 ```
 ### 5. 得到表单中元素的名称和值:
 ```js
-document.getElementById(“alihanniba”).name(或value)
+document.getElementById(“alihanniba”).name(或value);
 ```
 ### 6. 一个小写转大写的JS:
 ```js
@@ -31,7 +31,7 @@ String,Number,Boolean,Null,Object,Function
 ```
 ### 8. JS中的字符型转换成数值型:
 ```js
-parseInt(),parseFloat()
+parseInt(),parseFloat();
 ```
 ### 9. JS中的数字转换成字符型:
 ```js
@@ -65,7 +65,7 @@ for([initial e¬xpression];[condition];[upadte e¬xpression]) {
 
 ### 16.循环中止的命令是: 
 ```js
-break
+break;
 ```
 
 ### 17.JS中的函数定义
@@ -77,7 +77,7 @@ function alihanniba([parameter],…) {
 
 ### 18.当文件中出现多个form表单时.可以用
 ```js
-document.forms[0],document.forms[1]
+document.forms[0],document.forms[1];
 ```
 来代替.
 ### 19.窗口
@@ -140,7 +140,7 @@ document.createTextNode();
 
 ### 29.得到元素的方法:
 ```js
-document.getElementById()
+document.getElementById();
 ```
 
 ### 30.设置表单中所有文本型的成员的值为空:
