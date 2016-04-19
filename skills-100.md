@@ -29,3 +29,32 @@ document.getElementById(“output”).value = document.getElementById(“input�
 ```js
 String,Number,Boolean,Null,Object,Function
 ```
+### 8. JS中的字符型转换成数值型:
+```js
+parseInt(),parseFloat()
+```
+### 9. JS中的数字转换成字符型:
+```js
+(“”+变量)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
