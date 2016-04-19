@@ -346,10 +346,21 @@ window.defaultStatus = ‘alihanniba’;
 external.AddFavorite(“https://www.alihanniba.com/”;,”alihanniba”);
 ```
 
+### 65.JS中遇到脚本错误时不做任何操作:
+```js
+window.onerror = doNothing; 
+```
+**指定错误句柄的语法为:**
+```js
+window.onerror = handleError;
+```
 
+### 66.JS中指定当前打开窗口的父窗口:window.opener,支持opener.opener…的多重继续.
 
-
-
+### 67..JS中的窗口重定向:
+```js
+window.navigate(“https://www.alihanniba.com/”);
+```
 
 
 
