@@ -57,12 +57,21 @@ if(condition) {
 ```
 
 ### 15.JS中的循环结构:
+```js
 for([initial e¬xpression];[condition];[upadte e¬xpression]) {
     inside loop
 }
+```
 
+### 16.循环中止的命令是: 
+```js
+break
+```
 
-
+### 17.JS中的函数定义
+function alihanniba([parameter],…) {
+    statement[s]
+}
 
 
 
