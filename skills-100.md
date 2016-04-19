@@ -116,8 +116,62 @@ window.prompt("alihanniba");
 
 ### 24.指定当前显示链接的位置::
 ```js
-window.location.href=”www.alihanniba.com”
+window.location.href=”www.alihanniba.com”;
 ```
+
+### 25.取出窗体中的所有表单的数量:
+```js
+document.forms.length;
+```
+### 26.关闭文档的输出流:
+```js
+document.close();
+```
+
+### 27.字符串追加连接符:
+```js
++=
+```
+### 28.创建一个文档元素:
+```js
+document.createElement();
+document.createTextNode();
+```
+
+### 29.得到元素的方法:
+```js
+document.getElementById()
+```
+
+### 30.设置表单中所有文本型的成员的值为空:
+```js
+var form = window.document.forms[0];
+for (var i = 0; i < form.length; i++){
+    if (form.elements.type == “text”){
+        form.elements.value = “”;
+    }
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
