@@ -147,8 +147,8 @@ document.getElementById()
 ```js
 var form = window.document.forms[0];
 for (var i = 0; i < form.length; i++){
-    if (form.elements.type == “text”){
-        form.elements.value = “”;
+    if (form[i].elements.type == “text”){
+        form[i].elements.value = “”;
     }
 }
 ```
