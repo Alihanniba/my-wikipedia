@@ -21,3 +21,9 @@ window->(navigator,screen,history,location,document)
 ```js
 document.getElementById(“alihanniba”).name(或value)
 ```
+### 5. 一个小写转大写的JS:
+```js
+document.getElementById(“output”).value = document.getElementById(“input”).value.toUpperCase();
+
+
+```
