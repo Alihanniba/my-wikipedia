@@ -387,7 +387,7 @@ setInterval(funcRef,msecDelay);
 ```
 或
 ```js
-setTimeout
+setTimeout();
 ```
 
 ### 72.JS中的退出之前使用的句柄
