@@ -323,12 +323,23 @@ onfocus=”this.blur()”
 
 ### 61.取出该元素在页面中出现的数量:
 ```js
-document.all.tags(“div”).length
+document.all.tags(“div”).length;
 ```
 
+### 62.JS中分为两种窗体输出:模态和非模态.
+```js
+window.showModaldialog();
+window.showModeless();
+```
 
-
-
+### 63.状态栏文字的设置:
+```js
+window.status=’alihanniba’,
+```
+**默认的状态栏文字设置:**
+```js
+window.defaultStatus = ‘alihanniba’;
+```
 
 
 
