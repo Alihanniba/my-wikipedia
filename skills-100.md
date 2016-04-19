@@ -265,7 +265,7 @@ dateObj.setSeconds(val)设置秒 [注意:此日期时间从0开始计]
 
 ### 44.parent代表父亲对象,top代表最顶端对象:
 
-### 45.打开子窗口的父窗口为: opener:
+### 45.打开子窗口的父窗口为: opener
 
 ### 46.表示当前所属的位置: this
 
@@ -285,7 +285,7 @@ Array,Boolean,Date,Error,EvalError,Function,Math,Number,Object,RangeError,Refere
 
 ### 52.JS中的焦点顺序:
 ```js
-document.getElementByid(“表单元素”).tabIndex = 1
+document.getElementByid(“表单元素”).tabIndex = 1;
 ```
 
 ### 53.可设置元素是否可被修改,
@@ -318,7 +318,7 @@ disabled
 
 ### 60.防止用户对文本框中输入文本:
 ```js
-onfocus=”this.blur()”
+onfocus=”this.blur()”;
 ```
 
 ### 61.取出该元素在页面中出现的数量:
@@ -334,7 +334,7 @@ window.showModeless();
 
 ### 63.状态栏文字的设置:
 ```js
-window.status=’alihanniba’,
+window.status=’alihanniba’;
 ```
 **默认的状态栏文字设置:**
 ```js
