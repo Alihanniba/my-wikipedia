@@ -21,9 +21,11 @@ window->(navigator,screen,history,location,document)
 ```js
 document.getElementById(“alihanniba”).name(或value)
 ```
-### 5. 一个小写转大写的JS:
+### 6. 一个小写转大写的JS:
 ```js
 document.getElementById(“output”).value = document.getElementById(“input”).value.toUpperCase();
-
-
+```
+### 7. JS中的值类型:
+```js
+String,Number,Boolean,Null,Object,Function
 ```
