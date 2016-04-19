@@ -442,4 +442,21 @@ document.write();
 document.writeln();
 ```
 
+### 82.防止链接文字折行.
+```js
+document.body.noWrap=true;
+```
+
+### 83.取该变量的第几位的字符.
+```js
+alihanniba.charAt(0);
+```
+
+
+
+
+
+
+
+
 
