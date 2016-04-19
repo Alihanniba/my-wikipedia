@@ -25,6 +25,7 @@ this is my first book on gitbook.
     * [SSE](sse.md)
   * CSS
   * Javascript
+    * [Skills-100](skills-100.md)
   * jQuery
   * Mobile-Web
   * HTTP Header
