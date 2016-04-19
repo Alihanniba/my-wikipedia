@@ -194,7 +194,7 @@ String1.indexOf(“alihanniba”)!=-1则说明没找到
 ```
 ### 38.取字符串中指定位置的一个字符:
 ```js
-StringA.charAt(9);
+alihanniba.charAt(9);
 ```
 
 
