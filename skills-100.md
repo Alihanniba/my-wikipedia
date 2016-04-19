@@ -1,4 +1,5 @@
 # Skills-100
+___
 
 ### 1.js输出语句
 
@@ -486,7 +487,8 @@ string.split(分隔符);
 
 
 
-
+___
+![](alihanniba.png)
 
 
 
