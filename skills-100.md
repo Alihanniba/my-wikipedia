@@ -427,7 +427,7 @@ window.history.back();
 window.history.forward();
 ```
 
-### 79.(返回第几页,也可以使用访问过的URL)
+### 79.返回第几页,也可以使用访问过的URL
 ```js
 window.history.go();
 ```
