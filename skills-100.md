@@ -69,10 +69,11 @@ break
 ```
 
 ### 17.JS中的函数定义
+```js
 function alihanniba([parameter],…) {
     statement[s]
 }
-
+```
 
 
 
