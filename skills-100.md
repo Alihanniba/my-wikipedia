@@ -390,7 +390,13 @@ setInterval(funcRef,msecDelay);
 setTimeout
 ```
 
-
+### 72.JS中的退出之前使用的句柄
+```js
+function verifyClose(){
+    event.returnValue=”we really like you and hope you will stay longer.”;
+}} 
+window.onbeforeunload=verifyClose;
+```
 
 
 
