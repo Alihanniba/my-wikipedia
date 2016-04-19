@@ -297,7 +297,54 @@ contentEditable
 isContentEditable
 ```
 
-### 54.isDisabled判断是否为禁止状态.disabled设置禁止状态
+### 54.判断是否为禁止状态.
+```js
+isDisabled
+```
+设置禁止状态
+```js
+disabled
+```
+
+### 55.length取得长度,返回整型数值
+
+### 56.addBehavior()是一种JS调用的外部函数文件其扩展名为.htc
+
+### 57.window.focus()使当前的窗口在所有窗口之前.
+
+### 58.blur()指失去焦点.与FOCUS()相反.
+
+### 59.select()指元素为选中状态.
+
+### 60.防止用户对文本框中输入文本:
+```js
+onfocus=”this.blur()”
+```
+
+### 61.取出该元素在页面中出现的数量:
+```js
+document.all.tags(“div”).length
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
