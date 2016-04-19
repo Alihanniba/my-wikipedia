@@ -272,7 +272,12 @@ dateObj.setSeconds(val)设置秒 [注意:此日期时间从0开始计]
 ### 47.当在超链接中调用JS函数时用: (javascript : ) 来开头后面加函数名
 
 
+### 48.JS的内建对象有:
+```js
+Array,Boolean,Date,Error,EvalError,Function,Math,Number,Object,RangeError,ReferenceError,RegExp,String,SyntaxError,TypeError,URIError
+```
 
+### 49.JS中的换行:/n
 
 
 
