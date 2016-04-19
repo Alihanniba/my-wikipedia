@@ -9,7 +9,7 @@ this is my first book on gitbook.
 ---
 
 * Client
-  * HTML
+  * [HTML](HTML.md)
     * [HOME](home.md)
     * [Introduction](introduction.md)
     * [Basic](basic.md)
@@ -32,6 +32,7 @@ this is my first book on gitbook.
   * Performance
     * [Front-PC](Front-PC.md)
 * Server
+  * [PHP](php.md)
     
 
 
