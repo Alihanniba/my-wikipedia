@@ -31,7 +31,7 @@
    * [Interview](interview.md)
        * [HTML](html.md)
        * [CSS](css.md)
-       * Javascript
+       * [Javascript](javascript-interview.md)
 * [Server](hou_duan.md)
    * [PHP](php.md)
    * [NodeJs](nodejs.md)
