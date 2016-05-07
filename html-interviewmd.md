@@ -32,7 +32,7 @@
 	
 	(3)import是css2.1提出的,只在IE5以上才能被识别,尔link是XHTML标签,无兼容问题;
 	
-### 介绍一下你对浏览器内核的理解?
+### 5 . 介绍一下你对浏览器内核的理解?
 
 	主要分成两部分:渲染引擎(layout engineer或REndering Engine)和JS引擎
 	
@@ -42,7 +42,7 @@
 	
 	最开始渲染引擎和js引擎并没有区分的很明确,后来js引擎越来越独立,内核就倾向于只指渲染引擎.
 	
-### 常见的浏览器内核有哪些?
+### 6 .  常见的浏览器内核有哪些?
 	Trident内核:IE,Maxthon,TT,The World,360,搜狗浏览器等.[又称MSHTML]
 	
 	Gecko内核: Netscape6及以上版本,FF,MozillaSuite/SeaMonkey等
@@ -51,7 +51,7 @@
 	
 	Webkit内核: Safari,Chrome等.    [Chrome的: Blink(WebKit的分支)]
 	
-### HTML5有哪些新特性,移除了哪些元素?如何处理HTML5新标签的浏览器兼容问题?如何区分HTML和HTML5?
+###7 .  HTML5有哪些新特性,移除了哪些元素?如何处理HTML5新标签的浏览器兼容问题?如何区分HTML和HTML5?
 
 	* HTML5现在已经不是SGML的子集,主要 是关于图像,位置,存储,多任务等功能的增加.
 		
@@ -81,7 +81,7 @@
 			frame,frameset,noframes;
 	
 	* 如何区分HTML5： DOCTYPE声明\新增的结构元素\功能元素	
-### 简述一下你对HTML语义化的理解?
+###8 . 简述一下你对HTML语义化的理解?
 	
 		用正确的标签做正确的事情.
 		
@@ -93,7 +93,7 @@
 		
 		使阅读源代码的人对网站更容易将网站分块,便于阅读维护理解.
 		
-### 请描述一下cookies,sessionStorage和localStorage的区别?
+###9 . 请描述一下cookies,sessionStorage和localStorage的区别?
 	
 		cookie是网站为了标示用户身份而储存在用户本地终端(Client Side)上的数据(通常经过加密).
 		
@@ -112,7 +112,7 @@
     		sessionStorage  数据在当前浏览器窗口关闭后自动删除
     		cookie  设置的cookie过期时间之前一直有效，即使窗口或浏览器关闭
 		
-### 如何实现浏览器内多个标签页之间的通信?
+###10 . 如何实现浏览器内多个标签页之间的通信?
 		WebSocket、SharedWorker；
 		
 		也可以调用localstorge、cookies等本地存储方式；
@@ -123,12 +123,12 @@
 		
 		注意quirks：Safari 在无痕模式下设置localstorge值时会抛出QuotaExceededError 的异常；
 
-### 页面可见性（Page Visibility API） 可以有哪些用途？
+###11 . 页面可见性（Page Visibility API） 可以有哪些用途？
 		通过 visibilityState 的值检测页面当前是否可见，以及打开网页的时间等;
 		
 		在页面被切换到其他后台进程的时候，自动暂停音乐或视频的播放；
 
-### title与h1的区别、b与strong的区别、i与em的区别？
+###12 . title与h1的区别、b与strong的区别、i与em的区别？
 		title属性没有明确意义只表示是个标题，H1则表示层次明确的标题，对页面信息的抓取也有很大的影响；
 
 		strong是标明重点内容，有语气加强的含义，使用阅读设备阅读网络时：<strong>会重读，而<B>是展示强调内容。
