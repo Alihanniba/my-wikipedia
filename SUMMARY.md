@@ -28,7 +28,7 @@
        * [Front-PC](Front-PC.md)
            * [Resources-preload](resources-preload.md)
        * [Front-Mobile](front-mobile.md)
-   * Interview
+   * [Interview](interview.md)
 * [Server](hou_duan.md)
    * [PHP](php.md)
    * [NodeJs](nodejs.md)
