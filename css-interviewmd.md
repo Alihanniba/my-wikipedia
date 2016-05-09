@@ -19,7 +19,6 @@
 		9.伪类选择器(a:hover,li:nth-child)
 		
 		可继承的样式: 
-				
 				font-size
 				font-family
 				clolr
@@ -30,7 +29,6 @@
 				dt
 		
 		不可继承的样式:
-		
 				border
 				padding
 				margin
