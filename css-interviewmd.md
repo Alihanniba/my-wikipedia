@@ -41,6 +41,7 @@
 	载入样式以最后载入的定位为准
 	优先级为:
 			
+			
 			!important > id > class > tag
 			important 比内联优先级高					
 
