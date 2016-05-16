@@ -28,6 +28,7 @@
 				dd
 				dt
 		
+		
 		不可继承的样式:
 				border
 				padding
