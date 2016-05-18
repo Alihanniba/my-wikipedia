@@ -18,6 +18,7 @@
 		8.属性选择器(a[rel = "external"])
 		9.伪类选择器(a:hover,li:nth-child)
 		
+		
 		可继承的样式: 
 				font-size
 				font-family
