@@ -1,0 +1,75 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'cls-cli@2.1.1' ]
+2 info using npm@3.3.12
+3 info using node@v4.2.3
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData cls-cli@2.1.1
+8 silly fetchNamedPackageData cls-cli
+9 silly mapToRegistry name cls-cli
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npm.taobao.org/
+12 silly mapToRegistry uri https://registry.npm.taobao.org/cls-cli
+13 verbose request uri https://registry.npm.taobao.org/cls-cli
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 7:00:16 PM
+16 verbose request id b793d6dedb4f7bea
+17 verbose etag "56f8-y0EPdquznZPOGjjh/7Sl+w"
+18 http request GET https://registry.npm.taobao.org/cls-cli
+19 http 304 https://registry.npm.taobao.org/cls-cli
+20 verbose headers { date: 'Fri, 13 May 2016 11:00:16 GMT',
+20 verbose headers   connection: 'keep-alive',
+20 verbose headers   etag: '"56f8-y0EPdquznZPOGjjh/7Sl+w"',
+20 verbose headers   'x-readtime': '34' }
+21 silly get cb [ 304,
+21 silly get   { date: 'Fri, 13 May 2016 11:00:16 GMT',
+21 silly get     connection: 'keep-alive',
+21 silly get     etag: '"56f8-y0EPdquznZPOGjjh/7Sl+w"',
+21 silly get     'x-readtime': '34' } ]
+22 verbose etag https://registry.npm.taobao.org/cls-cli from cache
+23 verbose get saving cls-cli to /Users/liuli/.npm/registry.npm.taobao.org/cls-cli/.cache.json
+24 silly fetchPackageMetaData Error: No compatible version found: cls-cli@2.1.1
+24 silly fetchPackageMetaData Valid install targets:
+24 silly fetchPackageMetaData 2.1.0, 2.0.3, 2.0.2, 2.0.1, 1.1.4, 1.1.2, 1.1.0, 1.0.9, 1.0.7, 1.0.5, 1.0.2, 1.0.1, 1.0.0
+24 silly fetchPackageMetaData
+24 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (/usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js:156:16)
+24 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+24 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/lib/utils/pulse-till-done.js:19:8
+24 silly fetchPackageMetaData     at saved (/usr/local/lib/node_modules/npm/lib/cache/caching-client.js:168:7)
+24 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:210:7
+24 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:82:15)
+24 silly fetchPackageMetaData  error for cls-cli@2.1.1 [Error: No compatible version found: cls-cli@2.1.1
+24 silly fetchPackageMetaData Valid install targets:
+24 silly fetchPackageMetaData 2.1.0, 2.0.3, 2.0.2, 2.0.1, 1.1.4, 1.1.2, 1.1.0, 1.0.9, 1.0.7, 1.0.5, 1.0.2, 1.0.1, 1.0.0
+24 silly fetchPackageMetaData ]
+25 silly rollbackFailedOptional Starting
+26 silly rollbackFailedOptional Finishing
+27 silly runTopLevelLifecycles Starting
+28 silly runTopLevelLifecycles Finishing
+29 silly install printInstalled
+30 verbose stack Error: No compatible version found: cls-cli@2.1.1
+30 verbose stack Valid install targets:
+30 verbose stack 2.1.0, 2.0.3, 2.0.2, 2.0.1, 1.1.4, 1.1.2, 1.1.0, 1.0.9, 1.0.7, 1.0.5, 1.0.2, 1.0.1, 1.0.0
+30 verbose stack
+30 verbose stack     at pickVersionFromRegistryDocument (/usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js:156:16)
+30 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+30 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/pulse-till-done.js:19:8
+30 verbose stack     at saved (/usr/local/lib/node_modules/npm/lib/cache/caching-client.js:168:7)
+30 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:210:7
+30 verbose stack     at FSReqWrap.oncomplete (fs.js:82:15)
+31 verbose cwd /Users/liuli/GitBook/Library/alihanniba/my-wikipedia
+32 error Darwin 15.4.0
+33 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "cls-cli@2.1.1"
+34 error node v4.2.3
+35 error npm  v3.3.12
+36 error No compatible version found: cls-cli@2.1.1
+36 error Valid install targets:
+36 error 2.1.0, 2.0.3, 2.0.2, 2.0.1, 1.1.4, 1.1.2, 1.1.0, 1.0.9, 1.0.7, 1.0.5, 1.0.2, 1.0.1, 1.0.0
+37 error If you need help, you may report this error at:
+37 error     <https://github.com/npm/npm/issues>
+38 verbose exit [ 1, true ]
