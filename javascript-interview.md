@@ -174,9 +174,87 @@ HTTP协议通常承载于TCP协议之上，在HTTP和TCP之间添加一个安全
 * 缓存利用:缓存ajax,使用CDN,使用外部js和css文件以便缓存,添加Expires头,服务器配置Etag,减少DNS查找等
 * 请求数量:合并样式和脚本,使用css图片精灵,初始首屏之外的图片资源按需加载,静态资源延迟加载
 * 请求带宽:压缩文件,开启GZIP
+
+* **代码层面的优化**
+
+	* 用hash-table来优化查找
+	* 少用全局变量
+	* 用innerHTML代替DOM操作,减少DOM操作次数,优化javascript性能
+	* 用setTimeout来避免页面失去响应
+	* 缓存DOM节点查找的结果
+	* 避免使用css  Expression
+	* 避免全局查询
+	* 避免使用with(with会创建自己的作用域,会增加作用域链长度)
+	* 多个变量声明合并
+	* 避免图片和iframe等的空src,空sec会重新加载当前页面,影响速度和效率
+	* 尽量避免写在HTML标签中写style属性 
 	
 	
+### 移动端性能优化
+
+* 尽量使用CSS3动画,开启硬件加速
+* 适当使用touch时间代替click事件
+* 避免使用css3渐变阴影效果
+* 可以用transform:translateZ(0)来开启硬件加速
+* 不滥用float.float在渲染是计算量比较大,尽量减少使用
+* 不滥用web字体.web字体需要下载,解析,重绘当前页面,尽量减少使用
+* 合理使用requestAnimationFrame动画代替setTimeout
+* css中的属性(css3 transtions.css3 3d transforms.opacity.canvas.webgl.video)会触发GPU渲染,请合理使用.过度使用会引发手机过耗电增加
+* pc端的在移动端的同样适用
+
+### 什么是Etag？
+
+当发送一个服务器请求时，浏览器首先会进行缓存过期判断。浏览器根据缓存过期时间判断缓存文件是否过期。
+
+情景一：若没有过期，则不向服务器发送请求，直接使用缓存中的结果，此时我们在浏览器控制台中可以看到 200 OK(from cache) ，此时的情况就是完全使用缓存，浏览器和服务器没有任何交互的。
+
+情景二：若已过期，则向服务器发送请求，此时请求中会带上①中设置的文件修改时间，和Etag
+
+然后，进行资源更新判断。服务器根据浏览器传过来的文件修改时间，判断自浏览器上一次请求之后，文件是不是没有被修改过；根据Etag，判断文件内容自上一次请求之后，有没有发生变化
+
+情形一：若两种判断的结论都是文件没有被修改过，则服务器就不给浏览器发index.html的内容了，直接告诉它，文件没有被修改过，你用你那边的缓存吧—— 304 Not Modified，此时浏览器就会从本地缓存中获取index.html的内容。此时的情况叫协议缓存，浏览器和服务器之间有一次请求交互。
+
+情形二：若修改时间和文件内容判断有任意一个没有通过，则服务器会受理此次请求，之后的操作同1
+
+1. 只有get请求会被缓存，post请求不会
+
+###Expires和Cache-Control
+
+Expires要求客户端和服务端的时钟严格同步。HTTP1.1引入Cache-Control来克服Expires头的限制。如果max-age和Expires同时出现，则max-age有更高的优先级。
+
+```
+    Cache-Control: no-cache, private, max-age=0
+
+    ETag: abcde
+
+    Expires: Thu, 15 Apr 2016 20:00:00 GMT
+
+    Pragma: private
+
+    Last-Modified: $now // RFC1123 format
+```
+
+###ETag应用:
+
+Etag由服务器端生成，客户端通过If-Match或者说If-None-Match这个条件判断请求来验证资源是否修改。常见的是使用If-None-Match。请求一个文件的流程可能如下：
+
+====第一次请求===
+
+	1.客户端发起 HTTP GET 请求一个文件；
+
+	2.服务器处理请求，返回文件内容和一堆Header，当然包括Etag(例如"2e681a-6-5d044840")(假设服务器支持Etag生成和已经开启了Etag).状态码200
+====第二次请求===
+
+	客户端发起 HTTP GET 请求一个文件，注意这个时候客户端同时发送一个If-None-Match头，这个头的内容就是第一次请求时服务器返回的Etag：2e681a-6-5d0448402.服务器判断发送过来的Etag和计算出来的Etag匹配，因此If-None-Match为False，不返回200，返回304，客户端继续使用本地缓存；流程很简单，问题是，如果服务器又设置了Cache-Control:max-age和Expires呢，怎么办
 	
+答案是同时使用，也就是说在完全匹配If-Modified-Since和If-None-Match即检查完修改时间和Etag之后，
+
+服务器才能返回304.(不要陷入到底使用谁的问题怪圈)
+
+为什么使用Etag请求头?
+
+Etag 主要为了解决 Last-Modified 无法解决的一些问题。
+
 	
 	
 	
