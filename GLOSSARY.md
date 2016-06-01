@@ -1,4 +1,2 @@
-# Glossary
 
-## my
 
