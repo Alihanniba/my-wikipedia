@@ -1,5 +1,184 @@
 # Javascript
 
+###几条Javascript的基本规范
+* 不要在同一行声明多个变量
+* 请使用===/!==来比较true/false或者数值
+* 使用对象字面量替代new Array这种形式
+* 不要使用全局函数
+* Switch语句必须带有default分支
+* 函数不应该有时候有返回值,有时候没返回值
+* For循环必须有大括号
+* IF语句必须是有大括号
+* for-in循环中的变量 应该使用var关键字明确限制作用域,从而避免作用域污染
+
+###eval是干嘛的?
+
+	它的功能是把对应的字符串解析成JS代码并运行
+
+	应该避免使用eval,不安全,非常耗性能(2次,一次解析成js语句,一次执行).
+
+### 一个通用的事件侦听器函数
+```js
+markyun.Event = {
+	//页面加载完成后
+	readyEvent: function(fn) {
+		if (fn == null) {
+			fn = document;
+		}
+		var oldonload = window.onload;
+		if (typeof window.onload != 'function') {
+			window.onload = fn;
+		} else {
+			window.onload = function () {
+				oldonload();
+				fn();
+			};
+		}
+	},
+	
+	addEvent: function(element, type, handler) {
+		if (element.addEventListener) {
+			element.addEventListener(type, handler, false);
+		} else if (element.attachEvent) {
+			element.attachEvent('on' + type, function() {
+				handler.call(element);
+			});
+		} else {
+			element['on' + type] = handler;
+		}
+	},
+	
+	//移除事件
+	removeEvent: function(element,type,handler) {
+		if (element.removeEventListener) {
+			element.removeEventListener(type,handler,false);
+		} else if (element.datachEvent) {
+			element.datachEvent('on' + type, handler);
+		} else {
+			element['on' + type] = null;
+		}
+	},
+	
+	//阻止事件(主要是事件冒泡,因为IE不支持事件捕获)
+	stopPropagation: function(ev) {
+		if (ev.stopPropagation) {
+			ev.stopPropagation();
+		} else {
+			ev.cancelBubble = true;
+		}
+	},
+	
+	//取消事件的默认行为
+	preventDefault: function(event) {
+		if (event.preventDefault) {
+			event.preventDefault();
+		} else {
+			event.returnValue = false;
+		}
+	},
+	
+	//获取事件目标
+	getTarget: function (event) {
+		return event.target || event.srcElement;
+	},
+	
+	//获取event对象的引用,取到事件的所有信息,确保随时能使用event;
+	getEvent: function(e) {
+		var ev = e || window.event;
+		if (!ev) {
+			var c = this.getEvent.caller;
+			while (c) {
+				ev = c.arguments[0];
+				if (ev && Event == ev.constructor) {
+					break;
+				}
+				c = c.caller;
+			}
+		}
+		return ev;
+	}
+}
+
+```
+
+### Node的适用场景
+	
+	高并发,聊天,实时消息推送
+	
+### 如何创建一个对象?
+```
+	function Person(name, age) {
+		this.name = name;
+		this.age = age;
+		this.thing = function () {
+			alert(this.name);
+		}
+	}
+```
+
+### 谈谈This对象的理解
+
+	this是js的一个关键字,随着函数使用场合不同,this的值会发生变化.
+	
+	但是有一个总原则,那就是this指的是调用函数的那个对象.
+	
+	this一般情况下:是全局对象Global.作为方法调用,那么this就是指向这个对象
+	
+
+### 什么是闭包(closure),为什么要用它?
+	执行alert667()后,alert667()闭包内部函数的内部变量不会存在,
+	
+	使得javascript的垃圾回收机制GC不会回收alert667()所占用的资源
+	
+	因为alert667()的内部函数的执行需要依赖alert667()中的变量.
+	
+	这是对闭包作用 的非常直白的描述
+	
+	```
+		function alert667 () {
+			var num = 667;
+			var alertNum = function () {
+				alert(num);
+			}
+			num++;
+			return alert667(); 
+		}
+		
+		var alertNum = alert667();
+		alertNum();
+	
+	```
+	
+	
+### 如何判断一个对象是否属于某个类?
+```
+	if (a instanceof Person) {
+		alert('alihanniba');
+	}
+```
+
+### new 操作符具体干了什么?
+* 创建了一个空对象,并且this变量引用该对象,同事还继承了该函数的原型.
+* 属性和方法被加入到this引用的对象中
+* 新创建的对象由this所引用,并且最后隐式的返回this
+
+```
+var obj = {};
+obj.__proto__ = Base.prototype;
+Base.call(obj);
+```
+
+###针对jquery的优化方法
+* 基于class的选择器的性能相对于ID选择器的开销很大,因为需要遍历所有DOM元素
+* 频繁操作DOM,可以先缓存起来再操作,用jquery链式调用更好.
+	* 比如: var str = $("a").attr("href");
+* for循环建议先用个变量来存储需要遍历的数组的大小
+
+
+### 如何判断当前脚本是运行在浏览器还是node环境中?
+	通过判断Global对象是否为window,如果不为window,当前脚本没有运行在浏览器中
+	
+
 ###如何解决跨域问题
 * **jsonp**
 	
@@ -189,6 +368,18 @@ HTTP协议通常承载于TCP协议之上，在HTTP和TCP之间添加一个安全
 	* 避免图片和iframe等的空src,空sec会重新加载当前页面,影响速度和效率
 	* 尽量避免写在HTML标签中写style属性 
 	
+	(看雅虎14条性能优化原则)
+	
+	* 减少http请求次数,css sprites ,js css 源码压缩,图片大小控制合适;网页gzip,cdn托管,data缓存,图片服务器
+	* 前端模板js+数据,减少由html标签导致的带宽浪费,前端用变量保存ajax请求结果,每次操作本地变量,不用请求,减少请求次数
+	* innerHTML代替DOM操作,较少DOM操作次数,优化javascript性能
+	* 当需要设置的样式很多时设置className而不是直接操作style
+	* 少用全局变量,缓存dom节点查找的结果,减少io读取操作
+	* 避免使用css expression(css表达式)又称dynamix properties(动态属性)
+	* 图片预加载,讲样式表放在顶部,讲脚本放在底部,加上时间戳
+	* 避免在页面的主题布局中使用table,table要等其中的内容完全下载之后才会显示出来,显示比div+css布局慢.
+
+对普通网站有一个统一的思路,就是尽量向前端优化,减少数据库操作,减少磁盘io.向前端优化指的是,在不影响功能和体验的情况下 ,能在浏览器执行的不要在服务器端执行,能在缓存服务器上直接返回的不要在应用服务器,程序能直接取得的结果不要到外部取得,本机内能取到的数据不要到远程取,内存能取到的不要到磁盘取,缓存中有的不要去数据库查询,减少数据库操作指减少更新次数,缓存结果减少查询次数
 	
 ### 移动端性能优化
 
@@ -255,7 +446,10 @@ Etag由服务器端生成，客户端通过If-Match或者说If-None-Match这个�
 
 Etag 主要为了解决 Last-Modified 无法解决的一些问题。
 
-	
+
+### 对Node的优点和缺点提出自己的看法
+* (优点)因为Node是基于事件驱动和无阻赛的,所以非常适合处理并发请求,因此构建在Node上的代理服务器相比其他技术实现(如ruby)的服务器表现要好得多.此外,与Node代理服务器交互的客户端代码是由javascript写的,因此客户端和服务器端都是用同一种语言编写,这是非常美妙的事情.
+* (缺点)Node是一个相对新的开源项目,所以不太稳定,总是一直在变,而且缺少足够多的第三方库支持.	
 	
 ---
 ![](alihanniba.png)
