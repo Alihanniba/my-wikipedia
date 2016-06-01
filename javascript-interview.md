@@ -1,7 +1,7 @@
 # Javascript
 
 
-###几条Javascript的基本规范
+### 几条Javascript的基本规范
 
 * 不要在同一行声明多个变量
 * 请使用===/!==来比较true/false或者数值
