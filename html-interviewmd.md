@@ -150,5 +150,29 @@
 * 非装饰性图片必须加alt
 * 提高网站速度:网站速度是搜索引擎排序的一个重要指标
 
+
+### display:block;和display:inline;的区别
+* block元素特点:
+
+	* 处于常规流中时，如果width没有设置，会自动填充满父容器
+	* 可以应用margin/padding 
+	* 在没有设置高度的情况下会扩展高度以包含常规流中的子元素
+	* 处于常规流中时布局时在前后元素位置之间（独占一个水平空间）
+	* 忽略vertical-align
+
+* inline元素特点
+	
+	* 水平方向上根据direction依次布局
+	* 不会在元素前后进行换行 
+	* 受white-space控制
+	* margin/padding在竖直方向上无效，水平方向上有效
+	* width/height属性对非替换行内元素无效，宽度由元素内容决定
+	* 非替换行内元素的行框高由line-height确定，替换行内元素的行框高由height,margin,padding,border决定
+	* 浮动或绝对定位时会转换为block
+	* vertical-align属性生效
+
+
+
+
 ---
 ![](alihanniba.png)
