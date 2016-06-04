@@ -170,6 +170,8 @@
 	* 非替换行内元素的行框高由line-height确定，替换行内元素的行框高由height,margin,padding,border决定
 	* 浮动或绝对定位时会转换为block
 	* vertical-align属性生效
+	
+	
 
 
 
