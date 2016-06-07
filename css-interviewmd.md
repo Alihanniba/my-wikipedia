@@ -7,7 +7,6 @@
 	(2)盒模型: 内容(content),填充(padding),边界(margin),边框(border);
 	(3)区别: IE的content部分把border和padding计算了进去
 
-
 ### css选择符有哪些?哪些属性可以继承?
 
 		1.id选择器(#id)
