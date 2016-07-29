@@ -198,7 +198,23 @@ Sea.js 在解析顶级标识时，会相对 base 路径来解析。
 
 获取模块文件时，<script> 或 <link> 标签的 charset 属性。 默认是 utf-8
 
+charset 还可以是一个函数：
 
+```js
+seajs.config({
+  charset: function(url) {
+
+    // xxx 目录下的文件用 gbk 编码加载
+    if (url.indexOf('http://alihanniba.com/js/xxx') === 0) {
+      return 'gbk';
+    }
+
+    // 其他文件用 utf-8 编码
+    return 'utf-8';
+
+  }
+});
+```
 
 
 
