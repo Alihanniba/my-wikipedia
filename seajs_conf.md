@@ -88,3 +88,15 @@ seajs.config({
   }
 });
 ```
+
+```js
+define(function(require, exports, module) {
+
+   var underscore = require('gallery/underscore');
+     //=> 加载的是 https://a.alipayobjects.com/gallery/underscore.js
+
+   var biz = require('app/biz');
+     //=> 加载的是 path/to/app/biz.js
+
+});
+```
