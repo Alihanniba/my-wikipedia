@@ -200,6 +200,7 @@ Sea.js 在解析顶级标识时，会相对 base 路径来解析。
 
 charset 还可以是一个函数：
 
+
 ```js
 seajs.config({
   charset: function(url) {
