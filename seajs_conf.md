@@ -192,6 +192,11 @@ define(function(require, exports) {
 
 Sea.js 在解析顶级标识时，会相对 base 路径来解析。
 
+在 seajs@2.3.0 之前，Sea.js 会根据 sea.js 的路径去猜测 base 路径，一般为路径上含有 seajs 字符串的上一级路径。在 seajs@2.3.0 后，去掉了这个模糊的猜测。我们推荐始终手动设置一个准确的 base 路径。
+
+
+
+
 
 
 
