@@ -15,3 +15,13 @@ Sea.js 中的模块标识是 CommonJS 模块标识 的超集:
 ####相对标识
 相对标识以 . 开头，只出现在模块环境中（define 的 factory 方法里面）。相对标识永远相对当前模块的 URI 来解析：
 
+ ```js
+ // 在 http://example.com/js/a.js 的 factory 中：
+require.resolve('./b');
+  // => http://example.com/js/b.js
+
+// 在 http://example.com/js/a.js 的 factory 中：
+require.resolve('../c');
+  // => http://example.com/c.js
+ ```
+
