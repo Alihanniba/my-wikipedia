@@ -1,3 +1,6 @@
+![](https://img.shields.io/wercker/ci/wercker/docs.svg)
+![](https://img.shields.io/npm/l/express.svg)
+![](https://img.shields.io/pypi/status/Django.svg)
 ###模块标识
 模块标识是一个字符串，用来标识模块。在 require、 require.async 等加载函数中，第一个参数都是模块标识。
 
