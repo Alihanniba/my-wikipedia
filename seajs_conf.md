@@ -47,3 +47,7 @@ seajs.config({
   charset: 'utf-8'
 });
 ```
+
+支持以下配置选项：
+
+####alias Object
