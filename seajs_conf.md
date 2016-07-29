@@ -146,6 +146,11 @@ define(function(require, exports, module) {
 });
 ```
 
+####preload Array
+
+使用 preload 配置项，可以在普通模块加载前，提前加载并初始化好指定模块。
+
+
 
 
 
