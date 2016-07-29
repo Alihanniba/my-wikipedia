@@ -190,6 +190,8 @@ define(function(require, exports) {
 
 ####base String
 
+Sea.js 在解析顶级标识时，会相对 base 路径来解析。
+
 
 
 
