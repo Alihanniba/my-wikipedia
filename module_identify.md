@@ -67,3 +67,5 @@ seajs.config({
 require.resolve('jquery');
   // => http://code.jquery.com/jquery.js
 ```
+####普通路径
+
