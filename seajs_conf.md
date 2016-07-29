@@ -118,8 +118,8 @@ seajs.config({
 ```js
 define(function(require, exports, module) {
 
-  var lang = require('./i18n/{locale}.js');
-     //=> 加载的是 path/to/i18n/zh-cn.js
+  var lang = require('./alihanniba/{locale}.js');
+     //=> 加载的是 path/to/alihanniba/zh-cn.js
 
 });
 ```
