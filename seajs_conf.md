@@ -1,3 +1,49 @@
 ###Seajs配置
 
+可以对 Sea.js 进行配置，让模块编写、开发调试更方便。
 
+####seajs.config seajs.config(options)
+
+用来进行配置的方法。
+
+```js
+seajs.config({
+
+  // 别名配置
+  alias: {
+    'es5-safe': 'alihanniba/es5-safe/0.9.3/es5-safe',
+    'json': 'alihanniba/json/1.0.2/json',
+    'jquery': 'jquery/jquery/1.10.1/jquery'
+  },
+
+  // 路径配置
+  paths: {
+    'gallery': 'https://www.alihanniba.com/alihanniba'
+  },
+
+  // 变量配置
+  vars: {
+    'locale': 'zh-cn'
+  },
+
+  // 映射配置
+  map: [
+    ['http://alihanniba.com/js/app/', 'http://localhost/js/app/']
+  ],
+
+  // 预加载项
+  preload: [
+    Function.prototype.bind ? '' : 'es5-safe',
+    this.JSON ? '' : 'json'
+  ],
+
+  // 调试模式
+  debug: true,
+
+  // Sea.js 的基础路径
+  base: 'http://alihanniba.com/path/to/base/',
+
+  // 文件编码
+  charset: 'utf-8'
+});
+```
