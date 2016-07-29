@@ -160,7 +160,19 @@ seajs.config({
 });
 ```
 
+preload 中的空字符串会被忽略掉。
 
+
+**注意：**preload 中的配置，需要等到 use 时才加载。比如：
+
+```js
+seajs.config({
+  preload: 'a'
+});
+
+// 在加载 b 之前，会确保模块 a 已经加载并执行好
+seajs.use('./b');
+```
 
 
 
