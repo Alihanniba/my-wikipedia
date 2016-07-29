@@ -1,3 +1,6 @@
+![](https://img.shields.io/wercker/ci/wercker/docs.svg)
+![](https://img.shields.io/npm/l/express.svg)
+![](https://img.shields.io/pypi/status/Django.svg)
 ###Seajs配置
 
 可以对 Sea.js 进行配置，让模块编写、开发调试更方便。
