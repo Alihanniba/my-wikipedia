@@ -1,3 +1,6 @@
+![](https://img.shields.io/wercker/ci/wercker/docs.svg)
+![](https://img.shields.io/npm/l/express.svg)
+![](https://img.shields.io/pypi/status/Django.svg)
 #CMD模块定义规范
 ---
 在 Sea.js 中，所有 JavaScript 模块都遵循 CMD（Common Module Definition） 模块定义规范。该规范明确了模块的基本书写格式和基本交互规则。
@@ -228,7 +231,7 @@ define(function(require, exports, module) {
 与 RequireJS 的 AMD 规范相比，CMD 规范尽量保持简单，并与 CommonJS 和 Node.js 的 Modules 规范保持了很大的兼容性。通过 CMD 规范书写的模块，可以很容易在 Node.js 中运行，后续会介绍。
 
 
-
+![Logo](http://alihanniba.github.io/alihanniba.png)
 
 
 
