@@ -24,4 +24,28 @@ require.resolve('./b');
 require.resolve('../c');
   // => http://example.com/c.js
  ```
+ 
+ ####顶级标识
+ 
+ 顶级标识不以点（.）或斜线（/）开始， 会相对模块系统的基础路径（即 Sea.js 的 base 路径）来解析：
+ 
+ ```js
+ // 假设 base 路径是：http://example.com/assets/
+
+// 在模块代码里：
+require.resolve('gallery/jquery/1.9.1/jquery');
+  // => http://example.com/assets/gallery/jquery/1.9.1/jquery.js
+ ```
+ 
+ 
+ 模块系统的基础路径即 base 的默认值，与 sea.js 的访问路径相关
+ 
+ ```js
+ 如果 sea.js 的访问路径是：
+  http://example.com/assets/sea.js
+
+则 base 路径为：
+  http://example.com/assets/
+ ```
+ 
 
