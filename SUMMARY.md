@@ -24,7 +24,7 @@
        * [CMD standard](cmd_standard.md)
        * [Module identify](module_identify.md)
        * [Seajs](seajs.md)
-           * Seajs conf
+           * [Seajs conf](seajs_conf.md)
    * [jQuery](jquery.md)
    * [Mobile-Web](mobile-web.md)
    * [HTTP Header](http_header.md)
