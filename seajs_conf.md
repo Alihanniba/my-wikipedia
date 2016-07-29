@@ -184,6 +184,8 @@ define(function(require, exports) {
   // 此处执行时，不能保证模块 a 已经加载并执行好
 });
 ```
+####debug Boolean
+
 
 
 
