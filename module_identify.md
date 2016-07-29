@@ -47,5 +47,23 @@ require.resolve('gallery/jquery/1.9.1/jquery');
 则 base 路径为：
   http://example.com/assets/
  ```
+ 当 sea.js 的访问路径中含有版本号时，base 不会包含 seajs/x.y.z 字串。 当 sea.js 有多个版本时，这样会很方便。
  
+ ```js
+ 如果 sea.js 的路径是：
+  http://example.com/assets/seajs/1.0.0/sea.js
 
+则 base 路径是：
+  http://example.com/assets/
+ ```
+当然，也可以手工配置 base 路径：
+
+```js
+seajs.config({
+  base: 'http://code.jquery.com/'
+});
+
+// 在模块代码里：
+require.resolve('jquery');
+  // => http://code.jquery.com/jquery.js
+```
