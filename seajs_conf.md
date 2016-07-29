@@ -218,7 +218,17 @@ seajs.config({
 
 ###提示
 ####多次配置自动合并
+seajs.config 可以多次运行，每次运行时，会对配置项进行合并操作：
 
+```
+seajs.config({
+  alias: {
+    'jquery': 'path/to/jquery.js',
+    'a': 'path/to/a.js'
+  },
+  preload: ['seajs-text']
+});
+```
 
 
 
