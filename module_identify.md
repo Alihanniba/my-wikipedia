@@ -124,3 +124,4 @@ require.resolve('http://example.com/js/a.json#');
 
 一旦理解了以上两点，一切都会很自然、很简单。不必刻意去记这些规则，多写写，自然就会。
 
+---
