@@ -137,7 +137,14 @@ seajs.config({
 });
 ```
 
+```js
+define(function(require, exports, module) {
 
+  var a = require('./a');
+     //=> 加载的是 path/to/a-debug.js
+
+});
+```
 
 
 
