@@ -196,9 +196,7 @@ Sea.js 在解析顶级标识时，会相对 base 路径来解析。
 
 ####charset String | Function
 
-获取模块文件时，<script> 或 <link> 标签的 charset 属性。 默认是 utf-8;
-
-charset 还可以是一个函数:
+获取模块文件时，<script> 或 <link> 标签的 charset 属性。 默认是 utf-8;charset 还可以是一个函数:
 
 ```js
 seajs.config({
