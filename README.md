@@ -29,6 +29,7 @@
    * [Javascript](javascript.md)
        * [Skills-100](skills-100.md)
        * [CMD-Standard](cmd_standard.md)
+       * [Module identify](module_identify.md)
    * [jQuery](jquery.md)
    * [Mobile-Web](mobile-web.md)
    * [HTTP Header](http_header.md)
