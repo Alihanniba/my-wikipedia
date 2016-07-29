@@ -21,6 +21,7 @@
        * [2](c.2.md)
    * [Javascript](javascript.md)
        * [Skills-100](skills-100.md)
+       * CMD standard
    * [jQuery](jquery.md)
    * [Mobile-Web](mobile-web.md)
    * [HTTP Header](http_header.md)
