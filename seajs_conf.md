@@ -51,3 +51,25 @@ seajs.config({
 支持以下配置选项：
 
 ####alias Object
+当模块标识很长时，可以使用 alias 来简化。
+
+```js
+seajs.config({
+  alias: {
+    'jquery': 'jquery/jquery/1.10.1/jquery',
+    'app/biz': 'http://path/to/app/biz.js',
+  }
+});
+```
+
+```js
+define(function(require, exports, module) {
+
+   var $ = require('jquery');
+     //=> 加载的是 http://path/to/base/jquery/jquery/1.10.1/jquery.js
+
+   var biz = require('app/biz');
+     //=> 加载的是 http://path/to/app/biz.js
+
+});
+```
