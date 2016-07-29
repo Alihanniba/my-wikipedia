@@ -150,7 +150,15 @@ define(function(require, exports, module) {
 
 使用 preload 配置项，可以在普通模块加载前，提前加载并初始化好指定模块。
 
-
+```js
+// 在老浏览器中，提前加载好 ES5 和 json 模块
+seajs.config({
+  preload: [
+    Function.prototype.bind ? '' : 'es5-safe',
+    this.JSON ? '' : 'json'
+  ]
+});
+```
 
 
 
