@@ -100,3 +100,38 @@ define(function(require, exports, module) {
 
 });
 ```
+
+paths 配置可以结合 alias 配置一起使用，让模块引用非常方便。
+
+####vars Object
+
+有些场景下，模块路径在运行时才能确定，这时可以使用 vars 变量来配置。
+
+```js
+seajs.config({
+  vars: {
+    'locale': 'zh-cn'
+  }
+});
+```
+
+```js
+define(function(require, exports, module) {
+
+  var lang = require('./i18n/{locale}.js');
+     //=> 加载的是 path/to/i18n/zh-cn.js
+
+});
+```
+
+
+
+
+
+
+
+
+
+
+
+
