@@ -69,3 +69,46 @@ require.resolve('jquery');
 ```
 ####普通路径
 
+除了相对和顶级标识之外的标识都是普通路径。普通路径的解析规则，和 HTML 代码中的 <script src="..."></script> 一样，会相对当前页面解析。
+
+```js
+// 假设当前页面是 http://example.com/path/to/page/index.html
+
+// 绝对路径是普通路径：
+require.resolve('http://cdn.com/js/a');
+  // => http://cdn.com/js/a.js
+
+// 根路径是普通路径：
+require.resolve('/js/b');
+  // => http://example.com/js/b.js
+
+// use 中的相对路径始终是普通路径：
+seajs.use('./c');
+  // => 加载的是 http://example.com/path/to/page/c.js
+
+seajs.use('../d');
+  // => 加载的是 http://example.com/path/to/d.js
+```
+
+**提示：**
+Sea.js 在解析模块标识时， 除非在路径中有问号（?）或最后一个字符是井号（#），否则都会自动添加 JS 扩展名（.js）。如果不想自动添加扩展名，可以在路径末尾加上井号（#）。
+
+```js
+// ".js" 后缀可以省略：
+require.resolve('http://example.com/js/a');
+require.resolve('http://example.com/js/a.js');
+  // => http://example.com/js/a.js
+
+// ".css" 后缀不可省略：
+require.resolve('http://example.com/css/a.css');
+  // => http://example.com/css/a.css
+
+// 当路径中有问号（"?"）时，不会自动添加后缀：
+require.resolve('http://example.com/js/a.json?callback=define');
+  // => http://example.com/js/a.json?callback=define
+
+// 当路径以井号（"#"）结尾时，不会自动添加后缀，且在解析时，会自动去掉井号：
+require.resolve('http://example.com/js/a.json#');
+  // => http://example.com/js/a.json
+```
+
