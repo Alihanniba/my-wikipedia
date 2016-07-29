@@ -83,7 +83,7 @@ define(function(require, exports, module) {
 ```js
 seajs.config({
   paths: {
-    'gallery': 'https://a.alipayobjects.com/gallery',
+    'gallery': 'https://a.alihanniba.com/gallery',
     'app': 'path/to/app',
   }
 });
@@ -92,8 +92,8 @@ seajs.config({
 ```js
 define(function(require, exports, module) {
 
-   var underscore = require('gallery/underscore');
-     //=> 加载的是 https://a.alipayobjects.com/gallery/underscore.js
+   var underscore = require('alihanniba/underscore');
+     //=> 加载的是 https://a.alihanniba.com/alihanniba/underscore.js
 
    var biz = require('app/biz');
      //=> 加载的是 path/to/app/biz.js
