@@ -251,9 +251,20 @@ seajs.config({
 
  preload = ['seajs-text', 'seajs-combo'];
 ```
+即：config 会自动合并不存在的项，对存在的项则进行覆盖。
 
+####插件的配置
+插件可以给 Sea.js 添加配置项，请查看具体插件了解相关配置。
+####配置文件
+配置可以直接写在 html 页面上，也可以独立出来成为一个文件。
 
+config.js
 
+```js
+seajs.config({
+  ...
+});
+```
 
 
 
