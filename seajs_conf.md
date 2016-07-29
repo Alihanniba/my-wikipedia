@@ -186,6 +186,10 @@ define(function(require, exports) {
 ```
 ####debug Boolean
 
+值为 true 时，加载器不会删除动态插入的 script 标签。插件也可以根据 debug 配置，来决策 log 等信息的输出。
+
+####base String
+
 
 
 
