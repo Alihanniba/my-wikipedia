@@ -124,6 +124,25 @@ define(function(require, exports, module) {
 });
 ```
 
+vars 配置的是模块标识中的变量值，在模块标识中用 {key} 来表示变量。
+
+####map Array
+该配置可对模块路径进行映射修改，可用于路径转换、在线调试等。
+
+```js
+seajs.config({
+  map: [
+    [ '.js', '-debug.js' ]
+  ]
+});
+```
+
+
+
+
+
+
+
 
 
 
