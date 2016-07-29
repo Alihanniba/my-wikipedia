@@ -240,6 +240,17 @@ seajs.config({
 });
 ```
 
+上面两处 config 运行的结果是：
+
+```js
+ alias = {
+   'jquery': 'path/to/jquery.js',
+   'underscore': 'path/to/underscore.js',
+   'a': 'path/to/biz/a.js'
+ };
+
+ preload = ['seajs-text', 'seajs-combo'];
+```
 
 
 
