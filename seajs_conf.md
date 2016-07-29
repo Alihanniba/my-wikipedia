@@ -173,7 +173,17 @@ seajs.config({
 // 在加载 b 之前，会确保模块 a 已经加载并执行好
 seajs.use('./b');
 ```
+preload 配置不能放在模块文件里面：
 
+```js
+seajs.config({
+  preload: 'a'
+});
+
+define(function(require, exports) {
+  // 此处执行时，不能保证模块 a 已经加载并执行好
+});
+```
 
 
 
