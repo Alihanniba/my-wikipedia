@@ -79,3 +79,12 @@ define(function(require, exports, module) {
 ####paths Object
 
 当目录比较深，或需要跨目录调用模块时，可以使用 paths 来简化书写。
+
+```js
+seajs.config({
+  paths: {
+    'gallery': 'https://a.alipayobjects.com/gallery',
+    'app': 'path/to/app',
+  }
+});
+```
